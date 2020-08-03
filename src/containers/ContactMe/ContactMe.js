@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useCallback } from 'react';
 import Input from '../../components/UI/Input/Input';
 import { updateObject } from '../../shared/utility';
 import { checkValidity } from '../../shared/utility';
@@ -51,7 +51,7 @@ const ContactMe = (props) => {
 	const [sending, setSending] = useState(false);
 	const [isValid, setFormValidity] = useState(false);
 	const [sentSuccess, setSentSuccess] = useState(false);
-	const [error, setError] = useState(false)
+	const [error, setError] = useState(false);
 
 	const submitHandler = (event) => {
 		event.preventDefault();
@@ -60,7 +60,7 @@ const ContactMe = (props) => {
 
 	const clearFields = () => {
 		setFullMessage(initialMessage);
-		setSentSuccess(true)
+		setSentSuccess(true);
 	};
 
 	const sendMessage = () => {
@@ -78,7 +78,7 @@ const ContactMe = (props) => {
 		}|| ${fullMessage.message.value}`,
 		};
 		axios
-			.post('/api/sendemail', message, {timeout: 6000})
+			.post('/api/sendemail', message, { timeout: 6000 })
 			.then((res) => {
 				if (res.data === 'was sent') {
 					clearFields();
@@ -111,43 +111,38 @@ const ContactMe = (props) => {
 	for (let key in fullMessage) {
 		formElementsArray.push({ id: key, config: fullMessage[key] });
 	}
-	let sendingStatus =
-	<Button
-		btnType='Success'
-		disabled={!isValid}
-		clicked={() => sendMessage()}>
-		SEND
-	</Button>
+	let sendingStatus = (
+		<Button btnType='Success' disabled={!isValid} clicked={() => sendMessage()}>
+			SEND
+		</Button>
+	);
 
-	if(sending){
-		sendingStatus = 	<Button
-		btnType='Success'
-		disabled
->
-		SENDING...
-	</Button>
+	if (sending) {
+		sendingStatus = (
+			<Button btnType='Success' disabled>
+				SENDING...
+			</Button>
+		);
 	}
-	if(sentSuccess){
-		sendingStatus = 	<Button
-		btnType='Success'
-		disabled
->
-		SENT!
-	</Button>
+	if (sentSuccess) {
+		sendingStatus = (
+			<Button btnType='Success' disabled>
+				SENT!
+			</Button>
+		);
 	}
-	if(error){
-		sendingStatus = 	<Button
-		btnType='Success'
-		disabled
->
-		Sorry, something went wrong
-	</Button>
+	if (error) {
+		sendingStatus = (
+			<Button btnType='Success' disabled>
+				Sorry, something went wrong
+			</Button>
+		);
 	}
+
 	let form = (
-
 		<form className={classes.Form} onSubmit={submitHandler}>
-				{formElementsArray.map((formElement) => (
-		<Input
+			{formElementsArray.map((formElement) => (
+				<Input
 					key={formElement.id}
 					elementType={formElement.config.elementType}
 					elementConfig={formElement.config.elementConfig}
@@ -159,7 +154,7 @@ const ContactMe = (props) => {
 					touched={formElement.config.touched}
 				/>
 			))}
-	 <div className={classes.ButtonContainer}>{sendingStatus}</div>
+			<div className={classes.ButtonContainer}>{sendingStatus}</div>
 		</form>
 	);
 
