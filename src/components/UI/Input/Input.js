@@ -43,10 +43,10 @@ const input = (props) => {
 	}
 
 	let validationMessage = props.label[0].toUpperCase()+props.label.slice(1)
-	// if (props.invalid && props.touched) {
-	// 	validationMessage = `Please enter a valid ${props.label}`
+	if (props.invalid && props.touched) {
+		validationMessage = `Please enter a valid ${props.label}`
 
-	// }
+	}
 
 	return (
 		<div className={classes.Input}>
