@@ -18,8 +18,8 @@
 	display: block;
 	width: 90vw;
 	box-sizing: border-box;
-	border: 1px solid !important;
-	border-bottom-color: var(--secondary);
+	border: 1px solid;
+	border-bottom-color: var(--secondary) !important;
 	border-left-color: var(--base);
   border-right-color: var(--base);
   border-top-color: var(--base);
