@@ -1,0 +1,27 @@
+.PortfolioItems {
+  /* background-color: grey; */
+  width: 95vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3px;
+  margin: 1em;
+  }
+
+/* tablet layout */
+@media (min-width: 50em) {
+
+}
+
+/* desktop layout */
+@media (min-width: 75em) {
+	.PortfolioItems {
+  width: 80vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  margin: 1rem;
+  }
+}

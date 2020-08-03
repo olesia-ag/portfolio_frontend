@@ -1,0 +1,29 @@
+.Skills {
+  margin: 2em;
+  padding: 0.5em;
+}
+
+@media (min-width: 600px) {
+  .Skills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .Container{
+    display: flex;
+    flex-direction: row;
+  }
+  .SkillsContainer {
+    width: 30vw;
+    margin: 1em;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--base);
+    border: 2px solid var(--lightPink);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(206,182,183,1);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(206,182,183,1);
+    box-shadow: 5px 5px 5px 0px rgba(206,182,183,1);
+  }
+
+}

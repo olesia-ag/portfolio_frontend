@@ -1,0 +1,45 @@
+
+  .PortfolioItem {
+    width: 90%;
+    margin: 1em;
+    padding: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--base);
+    border: 2px solid var(--lightPink);
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(206,182,183,1);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(206,182,183,1);
+    box-shadow: 5px 5px 5px 0px rgba(206,182,183,1);
+  }
+
+  ul{
+    list-style: disc;
+  }
+
+ a:active{
+   background-color: var(--lightestPink);
+ }
+  .GitHubIcon {
+    width: 2em;
+    height: 2em;
+  }
+.Odd{
+  background-color: var(--lightestPink);
+}
+  a{
+    text-decoration: none;
+  }
+ /* tablet layout */
+@media (min-width: 50em) {
+
+}
+
+/* desktop layout */
+@media (min-width: 75em) {
+  .PortfolioItem {
+    width: 45%;
+    margin: 1em;
+    padding: 0.5em;
+  }
+}

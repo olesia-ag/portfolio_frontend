@@ -1,0 +1,30 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
+
+.SideDrawer {
+    position: fixed;
+    width: 100vw;
+    height: 40vh;
+    left: 0;
+    top: 0;
+    z-index: 200;
+    background-color: var(--base);
+    padding: 32px 16px;
+    box-sizing: border-box;
+    transition: transform 0.3s ease-out;
+    font-family: 'Dosis', sans-serif;
+}
+
+@media (min-width: 500px) {
+    .SideDrawer {
+        display: none;
+    }
+}
+
+.Open {
+    transform: translateY(0);
+}
+
+.Close {
+    transform: translateY(-100%);
+}

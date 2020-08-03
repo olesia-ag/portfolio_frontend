@@ -1,0 +1,33 @@
+/* mobile first: */
+
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
+
+*{
+    color: var(--textColor); 
+}
+
+.brMinor.brMajor {
+	line-height: 2rem;
+}
+
+.AboutMe {
+ margin: 0 1rem;
+ font-family: 'Dosis', sans-serif;
+ font-size: x-large;
+}
+
+/* table layout */
+@media (min-width: 50em) {
+	.brMajor {
+		line-height: 1rem;
+	}
+	.brMinor {
+		display: none;
+	}
+}
+/* desktop layout */
+@media (min-width: 75em) {
+	.brMajor.brMinor {
+		display: none;
+	}
+}

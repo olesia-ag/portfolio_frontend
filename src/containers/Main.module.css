@@ -1,0 +1,40 @@
+.Main {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Dosis', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.aboutMeHeader {
+	font-weight: 300;
+	font-size: xx-large;
+	margin: 0;
+	color: var(--base);
+	text-align: center;
+	background-color: transparent;
+	display: flex;
+	justify-content: center;
+	width: 100vw;
+	position: absolute;
+	top: 40%;
+}
+
+/* tablet layout */
+@media (min-width: 50em) {
+	.column {
+		float: left;
+		width: 50%;
+	}
+}
+/* desktop layout */
+@media (min-width: 75em) {
+	.AboutMe {
+		font-size: medium;
+		width: 80vw;
+	}
+
+
+}

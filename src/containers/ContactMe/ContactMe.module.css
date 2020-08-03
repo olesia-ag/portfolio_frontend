@@ -1,0 +1,30 @@
+.ContactData {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	width: 100vw;
+}
+ .Form {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+
+ }
+
+ .ButtonContainer{
+	 margin: 1em;
+ }
+
+/* tablet layout */
+@media (min-width: 50em) {
+	.Form {
+		width: 65%;
+	}
+
+}
+ @media (min-width: 75em) {
+	 .Form{
+		 width: 90%;
+	 }
+
+ }
