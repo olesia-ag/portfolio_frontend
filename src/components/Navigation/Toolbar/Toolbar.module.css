@@ -16,10 +16,10 @@
 
 .Toolbar nav {
     height: 100%;
-    
 }
 
-@media(max-width: 499px){
+/* desktop layout */
+@media (max-width: 75em) {
     .DesktopOnly {
         display: none;
     }

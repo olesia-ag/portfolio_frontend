@@ -57,9 +57,7 @@ const ContactMe = (props) => {
 		event.preventDefault();
 		setSending(true);
 	};
-	const sendingCancelHandler = () => {
-		setSending(false);
-	};
+
 
 	const clearFields = () => {
 		setFullMessage(initialMessage);
@@ -108,9 +106,6 @@ const ContactMe = (props) => {
 		}
 		setFullMessage(updatedFullMessage);
 		setFormValidity(formIsValid);
-	};
-	const cancelSending = () => {
-		setSending(false);
 	};
 
 	const formElementsArray = [];
