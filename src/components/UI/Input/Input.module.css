@@ -18,6 +18,7 @@
 	display: block;
 	width: 90vw;
 	box-sizing: border-box;
+	height: 30%;
 	border: 1px solid;
 	border-bottom-color: var(--secondary);
 	border-left-color: var(--base);
@@ -35,7 +36,7 @@
 }
 
 .TextArea {
-	resize: none;
+		resize: none;
     box-sizing: border-box;
     padding: 0.8em;
 

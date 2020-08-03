@@ -5,7 +5,19 @@
 	width: 100vw;
 }
   .Form {
-		display: flex;
+
+		display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: normal;
+-webkit-flex-direction: row;
+    -ms-flex-direction: row;
+        flex-direction: row;
+-webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
 		flex-direction: column;
 		align-items: center;
  }
