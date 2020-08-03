@@ -144,9 +144,10 @@ const ContactMe = (props) => {
 	</Button>
 	}
 	let form = (
+
 		<form className={classes.Form} onSubmit={submitHandler}>
-			{formElementsArray.map((formElement) => (
-				<Input
+				{formElementsArray.map((formElement) => (
+		<Input
 					key={formElement.id}
 					elementType={formElement.config.elementType}
 					elementConfig={formElement.config.elementConfig}
