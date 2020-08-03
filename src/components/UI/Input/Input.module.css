@@ -38,7 +38,7 @@
 .TextArea {
 		resize: none;
     box-sizing: border-box;
-    /* padding: 0.8em; */
+    padding: 0.8em;
 
 }
 
