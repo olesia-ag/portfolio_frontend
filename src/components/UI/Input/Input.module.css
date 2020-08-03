@@ -1,4 +1,4 @@
-.Input {
+ .Input {
 	width: 100%;
 	padding: 10px;
 	box-sizing: border-box;
@@ -52,7 +52,7 @@
 }
 
 /* tablet layout */
-@media (min-width: 50em) {
+ @media (min-width: 50em) {
 	.Input {
 		width: 90%;
 		padding: 10px;

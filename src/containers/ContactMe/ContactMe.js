@@ -9,6 +9,7 @@ import axios from '../../shared/axios';
 const ContactMe = (props) => {
 	const initialMessage = {
 		name: {
+			importance:1,
 			elementType: 'input',
 			elementConfig: {
 				type: 'text',
@@ -22,6 +23,7 @@ const ContactMe = (props) => {
 			touched: false,
 		},
 		email: {
+			importance: 2,
 			elementType: 'input',
 			elementConfig: {
 				type: 'email',
@@ -36,6 +38,7 @@ const ContactMe = (props) => {
 			touched: false,
 		},
 		message: {
+			importance: 3,
 			elementType: 'textarea',
 			value: '',
 			elementConfig: {
@@ -87,6 +90,8 @@ const ContactMe = (props) => {
 			.catch((err) => setError(err.message));
 		setSending(false);
 	};
+
+
 	const inputChangedHandler = (event, inputIdentifier) => {
 		const updatedFormElement = updateObject(fullMessage[inputIdentifier], {
 			value: event.target.value,
@@ -109,8 +114,9 @@ const ContactMe = (props) => {
 
 	const formElementsArray = [];
 	for (let key in fullMessage) {
-		formElementsArray.push({ id: key, config: fullMessage[key] });
+		formElementsArray.push({ id: key, config: fullMessage[key], importance: fullMessage[key].importance });
 	}
+	formElementsArray.sort((a,b)=>a.importance-b.importance)
 	let sendingStatus = (
 		<Button btnType='Success' disabled={!isValid} clicked={() => sendMessage()}>
 			SEND
@@ -139,10 +145,11 @@ const ContactMe = (props) => {
 		);
 	}
 
+
 	let form = (
 		<form className={classes.Form} onSubmit={submitHandler}>
-			{formElementsArray.map((formElement) => (
-				<Input
+			{formElementsArray.map((formElement) => {
+			return(	<Input
 					key={formElement.id}
 					elementType={formElement.config.elementType}
 					elementConfig={formElement.config.elementConfig}
@@ -153,10 +160,12 @@ const ContactMe = (props) => {
 					shouldValidate={formElement.config.validation}
 					touched={formElement.config.touched}
 				/>
-			))}
+			)})
+
+			}
 			<div className={classes.ButtonContainer}>{sendingStatus}</div>
 		</form>
-	);
+)
 
 	return (
 		<div className={classes.ContactData}>
