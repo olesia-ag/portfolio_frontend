@@ -12,13 +12,13 @@
 
 .InputElement {
 	outline: none;
-	border: 1px solid;
 	background-color: var(--base);
 	font: inherit;
 	padding: 0.3em;
 	display: block;
 	width: 90vw;
 	box-sizing: border-box;
+	border: 1px solid;
 	border-bottom-color: var(--secondary);
 	border-left-color: var(--base);
   border-right-color: var(--base);
