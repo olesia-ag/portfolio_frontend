@@ -58,7 +58,6 @@ const ContactMe = (props) => {
 		setSending(true);
 	};
 
-
 	const clearFields = () => {
 		setFullMessage(initialMessage);
 		setSentSuccess(true)
