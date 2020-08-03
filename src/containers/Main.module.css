@@ -22,6 +22,9 @@
 	top: 40%;
 }
 
+.ContactMe {
+	margin: 5px;
+}
 /* tablet layout */
 @media (min-width: 50em) {
 	.column {
