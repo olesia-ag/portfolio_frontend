@@ -18,7 +18,7 @@
 	display: block;
 	width: 90vw;
 	box-sizing: border-box;
-	border: 1px solid;
+	border: 1px solid !important;
 	border-bottom-color: var(--secondary);
 	border-left-color: var(--base);
   border-right-color: var(--base);
