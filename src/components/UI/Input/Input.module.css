@@ -20,7 +20,7 @@
 	box-sizing: border-box;
 	height: 30%;
 	border: 1px solid;
-	border-bottom-color: var(--secondary);
+	border-bottom-color: var(--secondary) !important;
 	border-left-color: var(--base);
   border-right-color: var(--base);
   border-top-color: var(--base);
@@ -42,7 +42,43 @@
 
 }
 
+.TextArea::-webkit-input-placeholder{
+	text-align: center;
+	color: var(--lightPink)
+}
+
+.TextArea::-moz-placeholder{
+	text-align: center;
+	color: var(--lightPink)
+}
+
+.TextArea:-ms-input-placeholder{
+	text-align: center;
+	color: var(--lightPink)
+}
+
+.TextArea::-ms-input-placeholder{
+	text-align: center;
+	color: var(--lightPink)
+}
+
 .TextArea::placeholder{
+	text-align: center;
+	color: var(--lightPink)
+}
+.InputElement::-webkit-input-placeholder{
+	text-align: center;
+	color: var(--lightPink)
+}
+.InputElement::-moz-placeholder{
+	text-align: center;
+	color: var(--lightPink)
+}
+.InputElement:-ms-input-placeholder{
+	text-align: center;
+	color: var(--lightPink)
+}
+.InputElement::-ms-input-placeholder{
 	text-align: center;
 	color: var(--lightPink)
 }

@@ -1,31 +1,21 @@
 .Button {
-	/*  */
-	/*
-    color: white; */
-    background-color: transparent;
+	background-color: transparent;
 	outline: none;
 	cursor: pointer;
-    /* color: rgb(122, 117, 117); */
 	font-weight: bold;
 	border: 2px;
 	font: inherit;
 	padding: 0.3em 10%;
-  margin: 0.2em;
-    border-radius: 0.5em;
+	margin: 0.2em;
+	border-radius: 0.5em;
 }
 
 .Success {
-    color: var(--darkColor)
+	color: var(--darkColor);
 }
 .Danger {
-    color: var(--pink);
+	color: var(--pink);
 }
-/* .Button:first-of-type {
-    margin-left: 0;
-    padding-left: 0;
-}
-
-*/
 
 .Button:disabled {
 	color: var(--lightPink);

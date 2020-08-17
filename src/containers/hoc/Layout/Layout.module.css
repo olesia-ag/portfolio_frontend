@@ -11,8 +11,5 @@
 	position: top;
 	background: url(../../../assets/header-pic.jpg) no-repeat
 		top;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
 	background-size: cover;
 }

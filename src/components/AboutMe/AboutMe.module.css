@@ -2,8 +2,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
 
-*{
-    color: var(--textColor); 
+* {
+	color: var(--textColor);
 }
 
 .brMinor.brMajor {
@@ -11,9 +11,9 @@
 }
 
 .AboutMe {
- margin: 0 1rem;
- font-family: 'Dosis', sans-serif;
- font-size: x-large;
+	margin: 0 1rem;
+	font-family: 'Dosis', sans-serif;
+	font-size: x-large;
 }
 
 /* table layout */
