@@ -1,5 +1,4 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 :root {
 	--darkColor: #473434;
@@ -11,13 +10,17 @@
 	--lightestPink: #EEE5E5;
 	--gitHubIcon: url('../assets/github_icon.png');
 	background-color: var(--base);
+	font-family: 'Roboto', sans-serif;
+}
+* {
+	font-family: inherit;
 }
 
 .App {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Roboto', sans-serif;
+
 }
 
 .listStyle {
