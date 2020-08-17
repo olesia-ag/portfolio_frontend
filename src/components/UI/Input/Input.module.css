@@ -18,12 +18,14 @@
 	display: block;
 	width: 90vw;
 	box-sizing: border-box;
+	border-radius: none;
+	-webkit-border-radius: 0px;
+	border-top: none;
+	border-left: none;
+	border-right: none;
 	height: 30%;
-	border: 1px solid;
+	border-bottom: 1px solid;
 	border-bottom-color: var(--secondary) !important;
-	border-left-color: var(--base);
-  border-right-color: var(--base);
-  border-top-color: var(--base);
 }
 
 .InputElement:focus {
