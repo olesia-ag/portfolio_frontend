@@ -45,21 +45,33 @@ const Layout = (props) => {
 		switchShowSideDrawer(!showSideDrawer);
 	};
 
+	const [headerPosition, setHeaderPosition] = useState(0);
+
+	useEffect(() => {
+		const onScroll = (e) => {
+			let st = window.pageYOffset || document.documentElement.scrollTop;
+			if (st > 200 && headerPosition === 0) {
+				setHeaderPosition(1);
+			}
+			if (st < 200 && headerPosition !== 0) {
+				setHeaderPosition(0);
+			}
+		};
+		window.addEventListener('scroll', onScroll);
+
+		return () => window.removeEventListener('scroll', onScroll);
+	}, [headerPosition]);
 
 	return (
 		<>
 			<header className={classes.mainHeader}>
+				<Toolbar
+					drawerToggleClicked={sideDrawerToggleHandler}
+					headerPosition={headerPosition}
+				/>
 				<TextHeader>{textToDisplay}</TextHeader>
 			</header>
-			<Toolbar
-				isAuth={props.isAuthenticated}
-				drawerToggleClicked={sideDrawerToggleHandler}
-			/>
-			<SideDrawer
-				isAuth={props.isAuthenticated}
-				closed={sideDrawerClosedHandler}
-				open={showSideDrawer}
-			/>
+			<SideDrawer closed={sideDrawerClosedHandler} open={showSideDrawer} />
 			<main className={classes.Content}>{props.children}</main>
 			<Footer />
 		</>

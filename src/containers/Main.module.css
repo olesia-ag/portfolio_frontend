@@ -11,7 +11,7 @@
 	font-weight: 300;
 	font-size: xx-large;
 	margin: 0;
-	color: var(--base);
+	color: var(--background-light-color);
 	text-align: center;
 	background-color: transparent;
 	display: flex;

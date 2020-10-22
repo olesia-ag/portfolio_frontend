@@ -1,26 +1,25 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 :root {
-	--darkColor: #473434;
-	--pink: #B77886;
-	--textColor: #231a1a;
-	--base: #F6F3F3;
-	--lightPink: #ceb6b7;
-	--darkPink: #875A5B;
-	--lightestPink: #EEE5E5;
+	/* --color-primary:  */
+	--text-color: #13270E;
+	--background-color: #FBF7F6;
+	--background-dark-color: #FBF7F6;
+	--primary-color: #539325;
+	--primary-light-color: #DED8CE;
+	--primary-dark-color: #13270E;
+
 	--gitHubIcon: url('../assets/github_icon.png');
-	background-color: var(--base);
+	background-color: var(--background-light-color);
+
 	font-family: 'Roboto', sans-serif;
 }
 * {
 	font-family: inherit;
 }
-
 .App {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-
 }
 
 .listStyle {
@@ -32,34 +31,17 @@
 	padding-right: 3rem;
 }
 
-	.appHeader {
-		height: 95vh;
-		background-image: url(../assets/header-pic.jpg);
-		background-size: cover;
-		background-position: top;
-		z-index: 4;
-		position: relative;
-		-webkit-clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 100%);
-		        clip-path: polygon(0 0, 100% 0, 100% 45vh, 0 100%);
-		display: flex;
-		flex-flow: column;
-		align-content: safe space-around;
-		font-family: 'Dosis', sans-serif;
-	}
+.listStyle {
+	list-style-type: none;
+	border: 3px var(--primary-dark-color);
+	display: flex;
+	flex-flow: row;
+	margin: 1em 1em;
+}
 
-	.listStyle {
-		list-style-type: none;
-		border: 3px var(--tertiary);
-		display: flex;
-		flex-flow: row;
-		margin: 1em 1em;
-	}
-
-	.liStyle {
-		padding-right: 3rem;
-	}
-	.link {
-		text-decoration: none;
-	}
-
-
+.liStyle {
+	padding-right: 3rem;
+}
+.link {
+	text-decoration: none;
+}

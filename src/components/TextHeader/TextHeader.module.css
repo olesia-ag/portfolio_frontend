@@ -4,12 +4,22 @@
 	font-size: xx-large;
 	font-weight: 400;
 	margin: 0;
-	color: var(--base);
 	text-align: center;
-	background-color: transparent;
+	background-image: linear-gradient(to right, #EAEAEA, #CCD0B4);
+	-webkit-background-clip: text;
+	color: transparent;
+	/* background-color: transparent; */
 	display: flex;
 	justify-content: center;
 	width: 100vw;
 	position: absolute;
 	top: 40%;
+}
+
+
+@media (min-width: 50em) {
+	.aboutMeHeader {
+	background-image: linear-gradient(to right, #D5D5C3, #2E4224);
+
+	}
 }

@@ -12,7 +12,7 @@
 
 .InputElement {
 	outline: none;
-	background-color: var(--base);
+	background-color: var(--background-light-color);
 	font: inherit;
 	padding: 0.3em;
 	display: block;
@@ -25,16 +25,16 @@
 	border-right: none;
 	height: 30%;
 	border-bottom: 1px solid;
-	border-bottom-color: var(--secondary) !important;
+	border-bottom-color: var(--primary-dark-color);
 }
 
 .InputElement:focus {
 	outline: none;
-	background-color: var(--base);
+	background-color: var(--background-light-color);
 }
 
 .Invalid {
-	border-bottom-color: var(--pink);
+	border-bottom-color: var(--primary-color);
 }
 
 .TextArea {
@@ -46,47 +46,47 @@
 
 .TextArea::-webkit-input-placeholder{
 	text-align: center;
-	color: var(--lightPink)
+	color: var(--primary-light-color)
 }
 
 .TextArea::-moz-placeholder{
 	text-align: center;
-	color: var(--lightPink)
+	color: var(--primary-light-color)
 }
 
 .TextArea:-ms-input-placeholder{
 	text-align: center;
-	color: var(--lightPink)
+	color: var(--primary-light-color)
 }
 
 .TextArea::-ms-input-placeholder{
 	text-align: center;
-	color: var(--lightPink)
+	color: var(--primary-light-color)
 }
 
 .TextArea::placeholder{
 	text-align: center;
-	color: var(--lightPink)
+	color: var(--primary-light-color)
 }
 .InputElement::-webkit-input-placeholder{
 	text-align: center;
-	color: var(--lightPink)
+	color: var(--primary-light-color)
 }
 .InputElement::-moz-placeholder{
 	text-align: center;
-	color: var(--lightPink)
+	color: var(--primary-light-color)
 }
 .InputElement:-ms-input-placeholder{
 	text-align: center;
-	color: var(--lightPink)
+	color: var(--primary-light-color)
 }
 .InputElement::-ms-input-placeholder{
 	text-align: center;
-	color: var(--lightPink)
+	color: var(--primary-light-color)
 }
 .InputElement::placeholder{
 	text-align: center;
-	color: var(--lightPink)
+	color: var(--primary-light-color)
 }
 
 /* tablet layout */

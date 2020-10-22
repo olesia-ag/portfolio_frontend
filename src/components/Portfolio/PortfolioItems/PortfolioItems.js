@@ -3,7 +3,7 @@ import classes from './PortfolioItems.module.css';
 import PortfolioItem from './PortfolioItem/PortfolioItem';
 
 const PortfolioItems = (props) => {
-	const [projects, setProjects] = useState({
+	const [projects] = useState({
 		bookyourevent: {
 			name: 'Book Your Event – Solo Developer ',
 			github: 'https://github.com/olesia-ag/bookyourevent',

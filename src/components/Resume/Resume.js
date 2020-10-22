@@ -4,7 +4,7 @@ import { downloadResume } from '../../shared/utility';
 import Button from '../UI/Button/Button';
 
 export function Resume(props) {
-	const [techSkills, setTechSkills] = useState({
+	const [techSkills] = useState({
 		Comfortable: ['JavaScript', 'HTML', 'CSS', 'React.js', 'React – Redux'],
 		Familiar: [
 			'React Native',
@@ -20,7 +20,7 @@ export function Resume(props) {
 		  ' C++',
 		  ' Heroku'],
 	});
-	const [softSkills, setSoftSkills] = useState([
+	const [softSkills] = useState([
 		'Bilingual: English and Russian',
 		'Excellent work ethic',
 		'Self-motivated',

@@ -1,12 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import classes from './AboutMe.module.css';
 
 function App() {
-	const [show, setShow] = useState(false);
-
-	const handleShowClick = () => {
-		setShow(true);
-	};
 
 	return (
 		<div className={classes.AboutMe}>

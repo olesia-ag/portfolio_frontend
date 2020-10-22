@@ -1,11 +1,20 @@
-import React from 'react'
-import classes from './DrawerToggler.module.css'
+import React from 'react';
+import classes from './DrawerToggler.module.css';
 
-const drawerToggler = (props) => <div onClick={props.clicked} className={classes.DrawerToggle}>
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-</div>
+const drawerToggler = (props) => {
+	let attachedClasses = [classes.DrawerToggle];
 
-export default drawerToggler
+	if (props.close) {
+		return <div className={classes.Close}></div>;
+	} else {
+		return (
+			<div onClick={props.clicked} className={classes.DrawerToggle}>
+				<div></div>
+				<div></div>
+				<div></div>
+			</div>
+		);
+	}
+};
+
+export default drawerToggler;

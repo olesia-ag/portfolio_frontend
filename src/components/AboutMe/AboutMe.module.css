@@ -1,7 +1,7 @@
 /* mobile first: */
 
 * {
-	color: var(--textColor);
+	color: var(--text-color);
 }
 
 .brMinor.brMajor {
