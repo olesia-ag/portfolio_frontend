@@ -2,24 +2,25 @@ import React from 'react';
 import classes from './Main.module.css';
 import ContactMe from './ContactMe/ContactMe';
 import AboutMe from '../components/AboutMe/AboutMe';
-import {Resume as Skills} from '../components/Resume/Resume'
+import { Resume as Skills } from '../components/Resume/Resume';
+import Portfolio from '../components/Portfolio/Portfolio';
 
 function Main() {
-
 	return (
 		<div className={classes.Main}>
-      {/* id is used for scrolling to an item, do not remove */}
+			{/* id is used for scrolling to an item, do not remove */}
 			<div className={classes.AboutMe} id='about-me'>
 				<AboutMe />
 			</div>
 			<div id='skills' className={classes.ContactMe}>
 				<Skills />
 			</div>
+			<div id='portfolio' className={classes.ContactMe}>
+				<Portfolio />
+			</div>
 			<div id='contact-me' className={classes.ContactMe}>
 				<ContactMe />
 			</div>
-
-
 		</div>
 	);
 }

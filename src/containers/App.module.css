@@ -7,6 +7,8 @@
 	--primary-color: #539325;
 	--primary-light-color: #DED8CE;
 	--primary-dark-color: #13270E;
+	--light-contrast-color: #D19592;
+	--contrast-color: #C81F70;
 
 	--gitHubIcon: url('../assets/github_icon.png');
 	background-color: var(--background-light-color);

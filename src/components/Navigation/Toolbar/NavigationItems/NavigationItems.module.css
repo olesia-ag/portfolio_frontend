@@ -7,29 +7,9 @@
 	align-items: center;
 	height: 100%;
 	font-family: inherit;
+	color: inherit;
 }
 
-.NavigationItem {
-	margin: 10px 0;
-	box-sizing: border-box;
-	display: block;
-	width: 100%;
-	font-family: inherit;
-}
-
-.NavigationItem a {
-	color: var(--primary-dark-color);
-	text-decoration: none;
-	width: 100%;
-	box-sizing: border-box;
-	display: block;
-}
-
-.NavigationItem a:hover,
-.NavigationItem a:active,
-.NavigationItem a.active {
-	color: var(--primary-dark-color);
-}
 
 @media (min-width: 500px) {
 	.NavigationList {
@@ -43,28 +23,7 @@
 		justify-content: space-between;
 	}
 
-	.NavigationItem {
-		margin: 0;
-		display: flex;
-		height: 100%;
-		width: auto;
-		align-items: center;
-	}
 
-	.NavigationItem a {
-		color: var(--primary-dark-color);
-		height: 100%;
-		padding: 16px 16px;
-		border-bottom: 4px solid transparent;
-	}
-
-	.NavigationItem a:hover,
-	.NavigationItem a:active,
-	.NavigationItem a.active {
-		background-color: var(--primary-light-color);
-		border-bottom: 4px solid var(--primary-color);
-		color: var(--primary-dark-color);
-	}
 	.Name {
 		animation: moveInRight 1s;
 	}

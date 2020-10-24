@@ -5,7 +5,7 @@ function App() {
 
 	return (
 		<div className={classes.AboutMe}>
-			<p>
+			{/* <p>
 				I've discovered my love for technology at the age of 14 when I got my
 				first computer and taught myself basic HTML/CSS to create an Olsen twins
 				fan webpage (I know, 2000s were wild).{' '}
@@ -16,7 +16,8 @@ function App() {
 				<br className={classes.brMajor} />
 				React.js remains my favorite library and I keep digging deeper into its internals and principles of functional programming in JS.
 				So, drop me a line and let me know what was your favorite Olsen twins movie:
-			</p>
+			</p> */}
+			text goes here
 		</div>
 	);
 }

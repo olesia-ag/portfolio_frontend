@@ -1,68 +1,19 @@
-import React, { useState} from 'react';
+import React from 'react';
 import classes from './Resume.module.css';
-import { downloadResume } from '../../shared/utility';
-import Button from '../UI/Button/Button';
 
-export function Resume(props) {
-	const [techSkills] = useState({
-		Comfortable: ['JavaScript', 'HTML', 'CSS', 'React.js', 'React – Redux'],
-		Familiar: [
-			'React Native',
-			'Sequelize ORM',
-			'Node.js',
-			'Express.js',
-			'Mocha',
-			'Webpack',
-		],
-
-		Some: [
-			'Java',
-		  ' C++',
-		  ' Heroku'],
-	});
-	const [softSkills] = useState([
-		'Bilingual: English and Russian',
-		'Excellent work ethic',
-		'Self-motivated',
-		'Open to different viewpoints, techniques and methods of operations',
-	]);
-	let skillsArr = [];
-
-	const formSkills = (skillsObj) => {
-		for (let key in skillsObj) {
-			skillsArr.push(
-					<ul key={key}>
-						{`${key}`}:
-					{skillsObj[key].map((skill) => (
-						<li key={skill+key}>{skill}</li>
-					))}
-					</ul>
-			);
-		}
-	};
-
-	formSkills(techSkills);
-
-	return (
-		<div className={classes.Skills}>
-				<Button clicked={downloadResume}>Donwload Full Resume (pdf)</Button>
-			<div className={classes.Container}>
-				<div className={classes.SkillsContainer}>
-				<h2>Tech Skills:</h2>
-				{skillsArr}
-			</div>
-			<div className={classes.SkillsContainer}>
-				<h2>Soft skills:</h2>
-				<ul>
-					{softSkills.map((skill) => (
-						<li key={skill}>{skill}</li>
-					))}
-				</ul>
-			</div>
-			</div>
-
-		</div>
-	);
-}
+export const Resume = () => (
+	<div className={classes.Skills}>
+		<span>
+			<strong>Tech skills:</strong> JavaScript, HTML, CSS/SCSS, React.js, React
+			Native, Node.js, Express.js, PostgreSQL, Mocha, Webpack
+		</span>
+		<br />
+		<span>
+			<strong>Soft skills: </strong> bilingual: English and Russian, excellent
+			work ethic, self-motivated, open to different viewpoints, techniques and
+			methods of operations
+		</span>
+	</div>
+);
 
 export default Resume;
