@@ -1,18 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 :root {
 	/* --color-primary:  */
-	--text-color: #13270E;
-	--background-color: #FBF7F6;
-	--background-dark-color: #FBF7F6;
-	--primary-color: #539325;
-	--primary-light-color: #DED8CE;
-	--primary-dark-color: #13270E;
-	--light-contrast-color: #D19592;
-	--contrast-color: #C81F70;
-
-	--gitHubIcon: url('../assets/github_icon.png');
-	background-color: var(--background-light-color);
-
+	--text-color: #181319;
+	--header-text-color: #fafafa;
+	--background-color: #fafafa;
+	--background-dark-color: #b8b8b8;
+	--primary-color: #525252;
+	--primary-light-color: #ad344e;
+	--primary-dark-color: #26202a;
+	--contrast-light-color: #fd7049;
+	--contrast-color: #fd5a2c;
 	font-family: 'Roboto', sans-serif;
 }
 * {

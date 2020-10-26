@@ -3,7 +3,7 @@ import classes from './NavigationItems.module.css';
 import NavigationItem from './NavigationItem/NavigationItem';
 
 const navigationItems = (props) => {
-	console.log('nav items', props.headerPosition);
+
 	let nameClasses = [classes.NotShow];
 	if(props.headerPosition===1){
 		nameClasses = [classes.Name]
@@ -22,11 +22,11 @@ const navigationItems = (props) => {
 					THINGS I KNOW
 				</NavigationItem>
 			</ul>
-			<span className={nameClasses.join(' ')}>
+			{/* <span className={nameClasses.join(' ')}>
 				<NavigationItem link='/#' exact>
 					OLESIA GUIDI
 				</NavigationItem>
-			</span>
+			</span> */}
 		</div>
 	);
 };

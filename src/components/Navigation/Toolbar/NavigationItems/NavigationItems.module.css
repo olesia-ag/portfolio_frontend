@@ -7,11 +7,11 @@
 	align-items: center;
 	height: 100%;
 	font-family: inherit;
-	color: inherit;
+	color: var(--header-text-color);
 }
 
 
-@media (min-width: 500px) {
+@media (min-width: 769px) {
 	.NavigationList {
 		flex-flow: row;
 		width: 100%;

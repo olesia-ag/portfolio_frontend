@@ -6,12 +6,10 @@ import { downloadResume } from '../../shared/utility';
 
 const Portfolio = (props) => {
 	return (
-		<>
-			<div className={classes.Center}>
-				<Button clicked={downloadResume}>Donwload Full Resume (pdf)</Button>
-			</div>
+		<div className={classes.Portfolio}>
+		<span><strong>Projects:</strong></span>
 			<PortfolioItems />
-		</>
+		</div>
 	);
 };
 

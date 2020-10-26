@@ -15,11 +15,14 @@
 .DrawerToggle div {
 	width: 90%;
 	height: 3px;
-	background-color: var(--primary-color);
+	background-color: var(--header-text-color);
 }
 
+.NotShow{
+	display: none;
+}
 
-@media (min-width: 500px) {
+@media (min-width: 50em) {
     .DrawerToggle {
         display: none;
     }

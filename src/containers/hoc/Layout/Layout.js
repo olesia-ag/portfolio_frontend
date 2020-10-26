@@ -39,13 +39,20 @@ const Layout = (props) => {
 				<Toolbar
 					drawerToggleClicked={sideDrawerToggleHandler}
 					headerPosition={headerPosition}
+					sideDrawerOpen={showSideDrawer}
 				/>
 				<div className={classes.aboutMeContainer}>
-					<div className={classes.aboutMeHeader + ' ' + classes.first}>Hello World!</div><br />
-					<div className={classes.aboutMeHeader + ' ' + classes.second}>
-						I am Olesia
-					</div><br />
-					<div className={classes.aboutMeHeader + ' ' + classes.third}>a full-stack developer living in NYC</div>
+					<span className={classes.aboutMeHeader + ' ' + classes.first}>
+						I am Olesia,
+					</span>
+					<br />
+					<span className={classes.aboutMeHeader + ' ' + classes.second}>
+						a full-stack developer
+					</span>
+					<br />
+					<span className={classes.aboutMeHeader + ' ' + classes.third}>
+						living in NYC
+					</span>
 					<br />
 				</div>
 			</header>

@@ -17,8 +17,6 @@ function App() {
 	);
 	return (
 		<div className={classes.App}>
-
-
 			<Layout>{routes}</Layout>
 		</div>
 	);

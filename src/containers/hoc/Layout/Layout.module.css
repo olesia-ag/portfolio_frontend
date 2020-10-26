@@ -9,42 +9,34 @@
 	padding: 0;
 	z-index: 4;
 	position: top;
-	background: url(../../../assets/header-pic-5.jpg) no-repeat top;
+	background: url(../../../assets/header-pic-1.jpg) no-repeat top;
 	background-size: cover;
 }
 
 .aboutMeContainer {
-	/* display: flex;
-	flex-direction: column;
-	justify-content: right;
-	align-content: center;
-	align-content: center; */
 	position: relative;
-	top: 40vh;
-	/* background-color: var(--background-color); */
-	/* opacity: .7; */
+	top: 70%;
+	margin-left: 2rem;
 }
 
 .aboutMeHeader {
-	font-weight: 300;
 	font-size: xx-large;
 	font-weight: 800;
-	display: flex;
-	justify-content: center;
 }
 
 .first,
 .second,
 .third {
-	display: block;
 	text-align: left;
-	margin-left: 5rem ;
-	background-image: linear-gradient(90deg, var(--light-contrast-color), var(--contrast-color));
-	-webkit-background-clip: text;
-	color: transparent;
+	writing-mode: horizontal-tb;
+	color: var(--header-text-color);
 }
 
 @media (min-width: 50em) {
+	.aboutMeContainer {
+		position: relative;
+		top: 50vh;
+	}
 	.first {
 		-webkit-animation: bounce-in-top 1.1s both;
 		animation: bounce-in-top 1.1s both;

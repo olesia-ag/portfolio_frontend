@@ -1,5 +1,5 @@
-.Center {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
+.Portfolio {
+	margin: 2rem;
+  padding: 0.5em;
+  text-indent: 2rem;
 }

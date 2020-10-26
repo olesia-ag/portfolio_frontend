@@ -8,14 +8,16 @@
     left: 0;
     top: 0;
     z-index: 200;
-    background-color: var(--background-light-color);
+    background-color: var(--primary-dark-color);
+    opacity: .7;
     padding: 32px 16px;
     box-sizing: border-box;
     transition: transform 0.3s ease-out;
     font-family: 'Dosis', sans-serif;
 }
 
-@media (min-width: 500px) {
+/* for 769 and more */
+@media (min-width: 769px) {
     .SideDrawer {
         display: none;
     }

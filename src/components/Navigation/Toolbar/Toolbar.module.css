@@ -6,16 +6,16 @@
 	left: 0;
 	background-color: transparent;
 	transition: ease-in-out 1s;
-	/* color: var(--primary-dark-color); */
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	box-sizing: border-box;
 	z-index: 90;
+	color: var(--header-text-color);
 }
 
 .Show{
-	background-color: var(--background-color);
+	background-color: var(--primary-dark-color);
 	transition: ease-in-out 1s;
 }
 
@@ -26,8 +26,14 @@
 .DesktopOnly{
 	width: 100%;
 }
+
+.mobileOnly{
+	display: none;
+}
+
 /* for mobile don't display */
-@media (max-width: 499px) {
+/*if it's 500px or less */
+@media (max-width: 768px) {
 	.DesktopOnly {
 		display: none;
 	}
