@@ -36,7 +36,11 @@
 	.AboutMe {
 		font-size: medium;
 		width: 80vw;
+		display: flex;
+		flex-direction: row;
 	}
 
-
+	.ContactMe {
+		margin-top: 2rem;
+	}
 }

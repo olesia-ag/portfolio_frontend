@@ -147,7 +147,9 @@ const ContactMe = (props) => {
 
 
 	let form = (
-		<form className={classes.Form} onSubmit={submitHandler}>
+		<React.Fragment>
+		<h4>Send Me A Message:</h4>
+		<form onSubmit={submitHandler}>
 			{formElementsArray.map((formElement) => {
 			return(	<Input
 					key={formElement.id}
@@ -165,11 +167,11 @@ const ContactMe = (props) => {
 			}
 			<div className={classes.ButtonContainer}>{sendingStatus}</div>
 		</form>
+		</React.Fragment>
 )
 
 	return (
 		<div className={classes.ContactData}>
-			<h4>Send Me A Message:</h4>
 			{form}
 		</div>
 	);

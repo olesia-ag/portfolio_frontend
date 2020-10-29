@@ -7,7 +7,6 @@
 	align-items: center;
 	height: 100%;
 	font-family: inherit;
-	color: var(--header-text-color);
 }
 
 
@@ -22,7 +21,6 @@
 		display: flex;
 		justify-content: space-between;
 	}
-
 
 	.Name {
 		animation: moveInRight 1s;

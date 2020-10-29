@@ -11,28 +11,33 @@
 	align-items: center;
 	box-sizing: border-box;
 	z-index: 90;
-	color: var(--header-text-color);
 }
+/* .Toolbar > {
+	color: var(--text-color);
+} */
 
-.Show{
+.Show {
 	background-color: var(--primary-dark-color);
 	transition: ease-in-out 1s;
+}
+.Show >{
+	color: var(--text-light-color);
 }
 
 .Toolbar nav {
 	height: 100%;
 }
 
-.DesktopOnly{
+.DesktopOnly {
 	width: 100%;
 }
 
-.mobileOnly{
+.mobileOnly {
 	display: none;
 }
 
 /* for mobile don't display */
-/*if it's 500px or less */
+/*if it's 768px or less */
 @media (max-width: 768px) {
 	.DesktopOnly {
 		display: none;

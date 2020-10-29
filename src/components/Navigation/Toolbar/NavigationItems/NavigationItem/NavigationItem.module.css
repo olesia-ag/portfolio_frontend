@@ -5,7 +5,6 @@
 	width: 100%;
 	font-family: inherit;
 	white-space: nowrap;
-	color: inherit;
 }
 
 .NavigationItem a {
@@ -13,10 +12,7 @@
 	width: 100%;
 	box-sizing: border-box;
 	display: block;
-	color: inherit;
 }
-
-
 
 @media (min-width: 769px) {
 	.NavigationItem {
@@ -25,7 +21,6 @@
 		height: 100%;
 		width: auto;
 		align-items: center;
-		color: inherit;
 	}
 
 	.NavigationItem a {
@@ -34,6 +29,4 @@
 		border-bottom: 4px solid transparent;
 		color: inherit;
 	}
-
-
 }

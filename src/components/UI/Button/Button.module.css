@@ -1,17 +1,21 @@
-.Button {
+.Center {
+	display: flex;
+	justify-content: center;
+}
+
+button.Button {
 	background-color: transparent;
 	outline: none;
 	cursor: pointer;
 	font-weight: bold;
-	border: 2px;
+	border: 2px solid red;
 	font: inherit;
 	padding: 0.3em 10%;
-	margin: 0.2em;
 	border-radius: 0.5em;
 }
 
 .Success {
-	color: var(--primary-dark-color);
+	color: var(--header-text-color);
 }
 .Danger {
 	color: var(--primary-color);

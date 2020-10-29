@@ -11,6 +11,8 @@
 .AboutMe {
 	margin: 0 1rem;
 	font-size: x-large;
+	text-align: center;
+	border: 2px solid blue;
 }
 
 /* table layout */
@@ -27,7 +29,11 @@
 	.brMajor.brMinor {
 		display: none;
 	}
-	/* .AboutMe {
-		font-size: large;
-	} */
+	.AboutMe {
+		margin: 0;
+		display: flex;
+		text-align: left;
+		align-items: center;
+		flex: 2;
+	}
 }

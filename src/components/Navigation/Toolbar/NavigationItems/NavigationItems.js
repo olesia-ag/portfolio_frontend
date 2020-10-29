@@ -18,9 +18,6 @@ const navigationItems = (props) => {
 				<NavigationItem link='/#contact-me' exact>
 					CONTACT ME
 				</NavigationItem>
-				<NavigationItem link='/#skills' exact>
-					THINGS I KNOW
-				</NavigationItem>
 			</ul>
 			{/* <span className={nameClasses.join(' ')}>
 				<NavigationItem link='/#' exact>

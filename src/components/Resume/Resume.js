@@ -4,14 +4,29 @@ import classes from './Resume.module.css';
 export const Resume = () => (
 	<div className={classes.Skills}>
 		<section>
-			<strong>Stack I've worked with:</strong> <br />JavaScript, HTML, CSS/SCSS, React.js, React
-			Native, Node.js, Express.js, PostgreSQL
+			<strong>I've worked with:</strong>
+			<ul className={classes.SkillsList}>
+				<li>JavaScript</li>
+				<li>HTML</li>
+				<li>CSS/SCSS </li>
+				<li>React.js</li>
+				<li>React Native</li>
+				<li>Node.js</li>
+				<li>Express.js</li>
+				<li>PostgreSQL</li>
+			</ul>
 		</section>
 		<br />
 		<section>
-			<strong>Education: </strong><br />
-			<span>LaGuardia Community College - Queens, NY - Computer Science</span><br />
-			<span>Fullstack Academy - New York, NY - completed 17 week course in full-stack web development</span>
+			<strong>Education: </strong>
+			<br />
+			<ul>
+				<li>LaGuardia Community College - Queens, NY - Computer Science</li>
+				<li>
+					Fullstack Academy - New York, NY - completed 17 week course in
+					full-stack web development
+				</li>
+			</ul>
 		</section>
 	</div>
 );

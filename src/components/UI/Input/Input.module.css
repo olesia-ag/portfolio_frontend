@@ -1,7 +1,9 @@
- .Input {
+.Input {
 	width: 100%;
 	padding: 10px;
 	box-sizing: border-box;
+	border: 2px solid purple;
+	margin: 0 auto;
 }
 
 .Label {
@@ -15,17 +17,16 @@
 	background-color: var(--background-light-color);
 	font: inherit;
 	padding: 0.3em;
-	display: block;
-	width: 90vw;
-	box-sizing: border-box;
-	border-radius: none;
-	-webkit-border-radius: 0px;
 	border-top: none;
 	border-left: none;
 	border-right: none;
-	height: 30%;
-	border-bottom: 1px solid;
-	border-bottom-color: var(--primary-dark-color);
+	margin: 0 auto;
+	border-bottom: 1px solid var(--primary-dark-color);
+	width: 95%;
+	box-sizing: border-box;
+	display: block;
+	border-radius: none;
+	-webkit-border-radius: 0px;
 }
 
 .InputElement:focus {
@@ -38,61 +39,63 @@
 }
 
 .TextArea {
-		resize: none;
-    box-sizing: border-box;
-    padding: 0.8em;
-
+	resize: none;
+	box-sizing: border-box;
+	padding: 0.8em;
 }
 
-.TextArea::-webkit-input-placeholder{
+.TextArea::-webkit-input-placeholder {
 	text-align: center;
-	color: var(--primary-light-color)
+	color: var(--primary-light-color);
 }
 
-.TextArea::-moz-placeholder{
+.TextArea::-moz-placeholder {
 	text-align: center;
-	color: var(--primary-light-color)
+	color: var(--primary-light-color);
 }
 
-.TextArea:-ms-input-placeholder{
+.TextArea:-ms-input-placeholder {
 	text-align: center;
-	color: var(--primary-light-color)
+	color: var(--primary-light-color);
 }
 
-.TextArea::-ms-input-placeholder{
+.TextArea::-ms-input-placeholder {
 	text-align: center;
-	color: var(--primary-light-color)
+	color: var(--primary-light-color);
 }
 
-.TextArea::placeholder{
+.TextArea::placeholder {
 	text-align: center;
-	color: var(--primary-light-color)
+	color: var(--primary-light-color);
 }
-.InputElement::-webkit-input-placeholder{
+.InputElement::-webkit-input-placeholder {
 	text-align: center;
-	color: var(--primary-light-color)
+	color: var(--primary-light-color);
 }
-.InputElement::-moz-placeholder{
+.InputElement::-moz-placeholder {
 	text-align: center;
-	color: var(--primary-light-color)
+	color: var(--primary-light-color);
 }
-.InputElement:-ms-input-placeholder{
+.InputElement:-ms-input-placeholder {
 	text-align: center;
-	color: var(--primary-light-color)
+	color: var(--primary-light-color);
 }
-.InputElement::-ms-input-placeholder{
+.InputElement::-ms-input-placeholder {
 	text-align: center;
-	color: var(--primary-light-color)
+	color: var(--primary-light-color);
 }
-.InputElement::placeholder{
+.InputElement::placeholder {
 	text-align: center;
-	color: var(--primary-light-color)
+	color: var(--primary-light-color);
 }
 
 /* tablet layout */
- @media (min-width: 50em) {
+/*desktop layout */
+
+
+@media (min-width: 769px) {
 	.Input {
-		width: 90%;
+		width: 60%;
 		padding: 10px;
 		box-sizing: border-box;
 	}
@@ -100,8 +103,8 @@
 		width: 100%;
 	}
 }
-/*desktop layout */
 
+/*
 @media (min-width: 75em) {
 	.Input {
 		width: 50%;
@@ -111,4 +114,4 @@
 	.InputElement {
 		width: 100%;
 	}
-}
+} */

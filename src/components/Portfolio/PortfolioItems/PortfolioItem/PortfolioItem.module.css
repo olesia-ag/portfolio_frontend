@@ -8,23 +8,6 @@ ul {
 	list-style: disc;
 }
 
-.GitHubIcon {
-	width: 2rem;
-	height: 2rem;
-}
-
 a {
 	text-decoration: none;
 }
-/* tablet layout */
-@media (min-width: 50em) {
-}
-
-/* desktop layout */
-/* @media (min-width: 75em) {
-  .PortfolioItem {
-    width: 45%;
-    margin: 1em;
-    padding: 0.5em;
-  }
-} */

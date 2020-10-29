@@ -3,13 +3,14 @@
 }
 
 .mainHeader {
+	border: 3px solid green;
 	height: 100vh;
-	width: 100vw;
+	width: 100%;
 	margin: 0;
 	padding: 0;
 	z-index: 4;
 	position: top;
-	background: url(../../../assets/header-pic-1.jpg) no-repeat top;
+	background: url(../../../assets/header-pic-2.jpg) no-repeat top;
 	background-size: cover;
 }
 
@@ -28,8 +29,7 @@
 .second,
 .third {
 	text-align: left;
-	writing-mode: horizontal-tb;
-	color: var(--header-text-color);
+	color: var(--text-color);
 }
 
 @media (min-width: 50em) {
@@ -55,7 +55,7 @@
 
 @-webkit-keyframes bounce-in-top {
 	0% {
-		transform: translateY(-500px);
+		transform: translateY(-50vh);
 		-webkit-animation-timing-function: ease-in;
 		animation-timing-function: ease-in;
 		opacity: 0;

@@ -5,14 +5,14 @@ import gitHubIcon from '../../../../assets/icons/i-github.svg';
 const portfolioItem = (props) => {
 	return (
 		<div>
-			<div className={classes.Links}>
+			<section className={classes.Links}>
 				<a href={props.deployed}>
-					<h3>{props.name}</h3>
+					<h4>{props.name}</h4>
 				</a>
 				<a href={props.github}>
-					<h4>(gitHub)</h4>
+					<h5>(gitHub)</h5>
 				</a>
-			</div>
+			</section>
 
 			<ul>
 				<li>{props.description}</li>
