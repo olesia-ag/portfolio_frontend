@@ -1,6 +1,5 @@
 import React from 'react';
 import classes from './Footer.module.css';
-import Pdf from '../../../assets/resume.pdf';
 
 const Footer = (props) => {
 	return (

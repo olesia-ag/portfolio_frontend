@@ -1,16 +1,18 @@
 import React from 'react';
 import classes from './NavigationItems.module.css';
 import NavigationItem from './NavigationItem/NavigationItem';
+import { HashLink } from 'react-router-hash-link';
 
 const navigationItems = (props) => {
-
 	let nameClasses = [classes.NotShow];
-	if(props.headerPosition===1){
-		nameClasses = [classes.Name]
+	let linksClasses = [classes.NavigationList];
+	if (props.headerPosition === 1) {
+		nameClasses = [classes.Top];
+		linksClasses = [classes.NavigationList, classes.NavigationListWhite];
 	}
 	return (
 		<div className={classes.NavigationContainer}>
-			<ul className={classes.NavigationList}>
+			<ul className={linksClasses.join(' ')}>
 				<NavigationItem link='/#about-me'>ABOUT ME</NavigationItem>
 				<NavigationItem link='/#portfolio' exact>
 					PORTFOLIO
@@ -19,11 +21,11 @@ const navigationItems = (props) => {
 					CONTACT ME
 				</NavigationItem>
 			</ul>
-			{/* <span className={nameClasses.join(' ')}>
-				<NavigationItem link='/#' exact>
-					OLESIA GUIDI
-				</NavigationItem>
-			</span> */}
+			<span className={nameClasses.join(' ')}>
+				<HashLink smooth to='/#'>
+					BACK TO TOP
+				</HashLink>
+			</span>
 		</div>
 	);
 };

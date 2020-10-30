@@ -1,7 +1,7 @@
 import React from 'react';
 import NavigationItems from '../NavigationItems/NavigationItems';
 import classes from './SideDrawer.module.css';
-import DrawerToggler from './DrawerToggle/DrawerToggler';
+
 
 const sideDrawer = (props) => {
 	let attachedClasses = [classes.SideDrawer, classes.Close];

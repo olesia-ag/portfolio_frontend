@@ -2,8 +2,7 @@ import React from 'react';
 import classes from './DrawerToggler.module.css';
 
 const drawerToggler = (props) => {
-	let attachedClasses = [classes.DrawerToggle];
-console.log('drawerToggler', props)
+
 	if (props.opened) {
 		return <div className={classes.NotShow}></div>;
 	} else {

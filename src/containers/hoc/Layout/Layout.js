@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import { useHistory } from 'react-router-dom';
 import classes from './Layout.module.css';
 import Toolbar from '../../../components/Navigation/Toolbar/Toolbar';
 import SideDrawer from '../../../components/Navigation/Toolbar/SideDrawer/SideDrawer';

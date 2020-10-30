@@ -1,8 +1,6 @@
 /* mobile first: */
 
-* {
-	color: var(--text-color);
-}
+
 
 .brMinor.brMajor {
 	line-height: 2rem;

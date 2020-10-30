@@ -9,12 +9,19 @@
 	font-family: inherit;
 }
 
-
 @media (min-width: 769px) {
 	.NavigationList {
 		flex-flow: row;
 		width: 100%;
+		color: var(--text-color);
+		transition: ease-in 1s;
 	}
+	.NavigationList.NavigationListWhite {
+		color: var(--text-light-color);
+		transition: ease-in 1s;
+	}
+
+
 
 	.NavigationContainer {
 		width: 100%;
@@ -22,13 +29,32 @@
 		justify-content: space-between;
 	}
 
-	.Name {
+	.Top {
 		animation: moveInRight 1s;
+		text-decoration: none;
+		margin: 0.5rem;
+		text-align: center;
+		color: var(--text-light-color);
+	}
+
+	.Top:hover {
+		cursor: pointer;
+		opacity: 0.6;
+	}
+
+	.NavigationContainer > a.NavigationListWhite,
+	.NavigationContainer > a.NavigationListWhite:visited,
+	.NavigationContainer > a.NavigationListWhite:hover,
+	.NavigationContainer > a.NavigationListWhite:active {
+		color: var(--text-light-color);
 	}
 
 	.NotShow {
 		visibility: hidden;
-		transition: ease-out 1s;
+		text-align: center;
+		transition-delay: 1s;
+		animation: moveOutLeft 1s;
+		margin: 0.5rem;
 	}
 }
 
@@ -45,5 +71,21 @@
 		opacity: 1;
 		-webkit-transform: translate(0);
 		transform: translate(0);
+	}
+}
+
+@keyframes moveOutLeft {
+	0% {
+		opacity: 1;
+		-webkit-transform: translate(0);
+		transform: translate(0);
+	}
+	80% {
+		opacity: 0.5;
+	}
+	100% {
+		opacity: 0;
+		-webkit-transform: translateX(10rem);
+		transform: translateX(10rem);
 	}
 }

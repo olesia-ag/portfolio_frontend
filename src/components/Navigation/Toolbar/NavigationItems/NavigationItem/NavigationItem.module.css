@@ -27,6 +27,13 @@
 		height: 100%;
 		padding: 16px 16px;
 		border-bottom: 4px solid transparent;
-		color: inherit;
+	}
+
+	.NavigationItem a:hover {
+		opacity: 0.6;
+	}
+
+	a.NavigationListWhite {
+		color: var(--text-light-color);
 	}
 }

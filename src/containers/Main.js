@@ -5,6 +5,7 @@ import AboutMe from '../components/AboutMe/AboutMe';
 import { Resume as Skills } from '../components/Resume/Resume';
 import Connect from '../components/Connect/Connect';
 
+
 function Main() {
 	return (
 		<div className={classes.Main}>

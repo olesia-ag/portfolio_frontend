@@ -14,10 +14,6 @@
 	margin: .5rem 0;
 }
 
-a {
-	color: var(--text-light-color);
-}
-
 @media (min-width: 600px) {
 	.Footer {
 		height: 20vh;
