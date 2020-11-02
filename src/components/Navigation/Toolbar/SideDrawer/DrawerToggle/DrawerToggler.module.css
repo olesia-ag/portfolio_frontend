@@ -15,7 +15,7 @@
 .DrawerToggle div {
 	width: 90%;
 	height: 3px;
-	background-color: var(--header-text-color);
+	background-color: var(--primary-dark-color);
 }
 
 .NotShow{

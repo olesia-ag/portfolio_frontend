@@ -7,9 +7,7 @@ const Footer = (props) => {
 			<span>designed and developed by Olesia Guidi</span>
 			<span>
 				photo by{' '}
-				<a href='https://unsplash.com/@fstopusa?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'>
-					Stephen Ellis
-				</a>
+				<a href="https://unsplash.com/@isaacbenhesed?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText">Isaac Benhesed</a>
 				{' '}on{' '}
 				<a href='https://unsplash.com/s/photos/black-and-white-flower?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'>
 					Unsplash

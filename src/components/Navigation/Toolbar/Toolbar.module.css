@@ -12,9 +12,6 @@
 	box-sizing: border-box;
 	z-index: 90;
 }
-/* .Toolbar > {
-	color: var(--text-color);
-} */
 
 .Show {
 	background-color: var(--primary-dark-color);

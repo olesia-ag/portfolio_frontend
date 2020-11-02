@@ -3,10 +3,12 @@ import classes from './NavigationItems.module.css';
 import NavigationItem from './NavigationItem/NavigationItem';
 import { HashLink } from 'react-router-hash-link';
 
-const navigationItems = (props) => {
+const navigationItems = ({ headerPosition }) => {
+	// console.log('props in navItems', opened);
 	let nameClasses = [classes.NotShow];
 	let linksClasses = [classes.NavigationList];
-	if (props.headerPosition === 1) {
+
+	if (headerPosition === 1) {
 		nameClasses = [classes.Top];
 		linksClasses = [classes.NavigationList, classes.NavigationListWhite];
 	}

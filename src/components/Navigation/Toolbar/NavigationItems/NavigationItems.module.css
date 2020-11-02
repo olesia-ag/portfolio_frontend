@@ -7,6 +7,13 @@
 	align-items: center;
 	height: 100%;
 	font-family: inherit;
+	z-index: 250;
+	color: var(--primary-dark-color);
+}
+
+.NotShow,
+.Top {
+	display: none;
 }
 
 @media (min-width: 769px) {
@@ -20,8 +27,6 @@
 		color: var(--text-light-color);
 		transition: ease-in 1s;
 	}
-
-
 
 	.NavigationContainer {
 		width: 100%;

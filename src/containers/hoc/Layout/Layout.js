@@ -34,7 +34,7 @@ const Layout = (props) => {
 
 	return (
 		<>
-			<header className={classes.mainHeader}>
+			<header className={classes.MainHeader}>
 				<Toolbar
 					drawerToggleClicked={sideDrawerToggleHandler}
 					headerPosition={headerPosition}
