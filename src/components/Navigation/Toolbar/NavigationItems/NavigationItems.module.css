@@ -8,7 +8,7 @@
 	height: 100%;
 	font-family: inherit;
 	z-index: 250;
-	color: var(--primary-dark-color);
+	color: var(--primary-light-color);
 }
 
 .NotShow,
@@ -35,6 +35,7 @@
 	}
 
 	.Top {
+		display: block;
 		animation: moveInRight 1s;
 		text-decoration: none;
 		margin: 0.5rem;
@@ -55,6 +56,7 @@
 	}
 
 	.NotShow {
+		display: block;
 		visibility: hidden;
 		text-align: center;
 		transition-delay: 1s;

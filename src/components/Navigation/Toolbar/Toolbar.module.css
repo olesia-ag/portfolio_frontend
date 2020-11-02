@@ -4,21 +4,13 @@
 	position: fixed;
 	top: 0;
 	left: 0;
-	background-color: transparent;
+	background-color: var(--primary-dark-color);
 	transition: ease-in-out 1s;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	box-sizing: border-box;
 	z-index: 90;
-}
-
-.Show {
-	background-color: var(--primary-dark-color);
-	transition: ease-in-out 1s;
-}
-.Show >{
-	color: var(--text-light-color);
 }
 
 .Toolbar nav {
@@ -33,10 +25,25 @@
 	display: none;
 }
 
+
 /* for mobile don't display */
 /*if it's 768px or less */
 @media (max-width: 768px) {
 	.DesktopOnly {
 		display: none;
+	}
+}
+
+@media(min-width: 769px){
+	.Toolbar{
+		background-color: transparent;
+	}
+
+	.Show {
+		background-color: var(--primary-dark-color);
+		transition: ease-in-out 1s;
+	}
+	.Show > {
+		color: var(--text-light-color);
 	}
 }

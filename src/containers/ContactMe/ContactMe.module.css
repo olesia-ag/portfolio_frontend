@@ -1,15 +1,10 @@
 .ContactData {
-	/* display: flex;
-	flex-direction: column;
-	align-items: center; */
 	width: 90vw;
 	margin: 0 auto;
-	border: 3px solid pink;
 }
 
 .ContactData form {
 	margin: 0 auto;
-	border: 2px solid lightblue;
 }
 .Form {
 	margin: 0 auto;
@@ -17,6 +12,5 @@
 
 form > .ButtonContainer {
 	margin: 0 auto;
-	border: 2px solid yellow;
 	width: 30%;
 }

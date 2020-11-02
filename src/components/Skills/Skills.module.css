@@ -11,10 +11,6 @@ ul.SkillsList {
 .SkillsList li {
 	margin-right: 1.5rem;
 }
-.EducationList{
-	list-style: inside;
-}
-
 @media (min-width: 600px) {
 	.Skills {
 		display: flex;

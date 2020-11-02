@@ -3,10 +3,12 @@ import classes from './Layout.module.css';
 import Toolbar from '../../../components/Navigation/Toolbar/Toolbar';
 import SideDrawer from '../../../components/Navigation/Toolbar/SideDrawer/SideDrawer';
 import Footer from '../../../components/Navigation/Footer/Footer';
+import { useHistory } from 'react-router-dom';
 
 const Layout = (props) => {
 	const [showSideDrawer, switchShowSideDrawer] = useState(false);
-
+	let history = useHistory();
+	console.log('history:', history.location.pathname);
 	const sideDrawerClosedHandler = () => {
 		switchShowSideDrawer(false);
 	};
@@ -35,11 +37,6 @@ const Layout = (props) => {
 	return (
 		<>
 			<header className={classes.MainHeader}>
-				<Toolbar
-					drawerToggleClicked={sideDrawerToggleHandler}
-					headerPosition={headerPosition}
-					sideDrawerOpen={showSideDrawer}
-				/>
 				<div className={classes.aboutMeContainer}>
 					<span className={classes.aboutMeHeader + ' ' + classes.first}>
 						I am Olesia,
@@ -54,7 +51,13 @@ const Layout = (props) => {
 					</span>
 					<br />
 				</div>
+				<Toolbar
+					drawerToggleClicked={sideDrawerToggleHandler}
+					headerPosition={headerPosition}
+					sideDrawerOpen={showSideDrawer}
+				/>
 			</header>
+
 			<SideDrawer closed={sideDrawerClosedHandler} open={showSideDrawer} />
 			<main className={classes.Content}>{props.children}</main>
 			<Footer />

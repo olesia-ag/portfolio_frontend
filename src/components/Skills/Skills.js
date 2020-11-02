@@ -1,7 +1,7 @@
 import React from 'react';
-import classes from './Resume.module.css';
+import classes from './Skills.module.css';
 
-export const Resume = () => (
+export const Skills = () => (
 	<div className={classes.Skills}>
 		<section>
 			<strong>I've worked with:</strong>
@@ -20,18 +20,15 @@ export const Resume = () => (
 		<section>
 			<strong>Education: </strong>
 			<br />
-			<ul className={classes.EducationList}>
+			<ul>
+				<li>LaGuardia Community College - Queens, NY - Computer Science</li>
 				<li>
-					Fullstack Academy - New York, NY <br /> completed 17 week course in
+					Fullstack Academy - New York, NY - completed 17 week course in
 					full-stack web development
-				</li>
-				<li>
-					LaGuardia Community College <br /> Queens, NY - coursework in Computer
-					Science
 				</li>
 			</ul>
 		</section>
 	</div>
 );
 
-export default Resume;
+export default Skills;

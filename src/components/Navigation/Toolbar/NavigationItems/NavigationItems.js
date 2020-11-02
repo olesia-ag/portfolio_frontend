@@ -16,7 +16,7 @@ const navigationItems = ({ headerPosition }) => {
 		<div className={classes.NavigationContainer}>
 			<ul className={linksClasses.join(' ')}>
 				<NavigationItem link='/#about-me'>ABOUT ME</NavigationItem>
-				<NavigationItem link='/#portfolio' exact>
+				<NavigationItem link='/portfolio' exact>
 					PORTFOLIO
 				</NavigationItem>
 				<NavigationItem link='/#contact-me' exact>

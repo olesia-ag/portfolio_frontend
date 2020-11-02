@@ -8,10 +8,14 @@ button.Button {
 	outline: none;
 	cursor: pointer;
 	font-weight: bold;
-	border: 2px solid red;
 	font: inherit;
-	padding: 0.3em 10%;
-	border-radius: 0.5em;
+	padding: .5rem 1rem;
+	/* border-radius: 0.5em; */
+	border-color: var(--primary-color);
+}
+
+button.Button:hover{
+	opacity: .6;
 }
 
 .Success {

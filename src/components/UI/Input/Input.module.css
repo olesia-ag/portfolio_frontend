@@ -2,7 +2,6 @@
 	width: 100%;
 	padding: 10px;
 	box-sizing: border-box;
-	border: 2px solid purple;
 	margin: 0 auto;
 }
 
@@ -104,14 +103,3 @@
 	}
 }
 
-/*
-@media (min-width: 75em) {
-	.Input {
-		width: 50%;
-		padding: 10px;
-		box-sizing: border-box;
-	}
-	.InputElement {
-		width: 100%;
-	}
-} */
