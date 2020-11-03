@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './Main.module.css';
 import ContactMe from './ContactMe/ContactMe';
 import AboutMe from '../components/AboutMe/AboutMe';
-import { Resume as Skills } from '../components/Resume/Resume';
+import Skills from '../components/Skills/Skills';
 import Connect from '../components/Connect/Connect';
 
 function Main() {

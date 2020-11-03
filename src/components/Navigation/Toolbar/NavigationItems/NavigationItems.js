@@ -4,7 +4,7 @@ import NavigationItem from './NavigationItem/NavigationItem';
 import { HashLink } from 'react-router-hash-link';
 
 const navigationItems = ({ headerPosition }) => {
-	// console.log('props in navItems', opened);
+
 	let nameClasses = [classes.NotShow];
 	let linksClasses = [classes.NavigationList];
 
