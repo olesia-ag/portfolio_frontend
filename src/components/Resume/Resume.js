@@ -29,6 +29,8 @@ export const Resume = () => (
 					LaGuardia Community College <br /> Queens, NY - coursework in Computer
 					Science
 				</li>
+				<li>Udemy <br />
+				 React - The Complete Guide (incl Hooks, React Router, Redux) <br/> completed 40.5 total hours of training</li>
 			</ul>
 		</section>
 	</div>

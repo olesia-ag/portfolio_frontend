@@ -36,27 +36,14 @@ const Layout = (props) => {
 
 	return (
 		<>
-			<header className={classes.MainHeader}>
-				<div className={classes.aboutMeContainer}>
-					<span className={classes.aboutMeHeader + ' ' + classes.first}>
-						I am Olesia,
-					</span>
-					<br />
-					<span className={classes.aboutMeHeader + ' ' + classes.second}>
-						a full-stack developer
-					</span>
-					<br />
-					<span className={classes.aboutMeHeader + ' ' + classes.third}>
-						living in NYC
-					</span>
-					<br />
-				</div>
+
+
 				<Toolbar
 					drawerToggleClicked={sideDrawerToggleHandler}
 					headerPosition={headerPosition}
 					sideDrawerOpen={showSideDrawer}
 				/>
-			</header>
+
 
 			<SideDrawer closed={sideDrawerClosedHandler} open={showSideDrawer} />
 			<main className={classes.Content}>{props.children}</main>
