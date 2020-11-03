@@ -1,6 +1,4 @@
- .Content {
+.Content {
 	max-width: 100vw;
+	min-height: 60vh;
 }
-
-
-

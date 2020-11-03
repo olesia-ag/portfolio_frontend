@@ -35,20 +35,16 @@ const Layout = (props) => {
 	}, [headerPosition]);
 
 	return (
-		<>
-
-
-				<Toolbar
-					drawerToggleClicked={sideDrawerToggleHandler}
-					headerPosition={headerPosition}
-					sideDrawerOpen={showSideDrawer}
-				/>
-
-
+		<div>
+			<Toolbar
+				drawerToggleClicked={sideDrawerToggleHandler}
+				headerPosition={headerPosition}
+				sideDrawerOpen={showSideDrawer}
+			/>
 			<SideDrawer closed={sideDrawerClosedHandler} open={showSideDrawer} />
 			<main className={classes.Content}>{props.children}</main>
 			<Footer />
-		</>
+		</div>
 	);
 };
 
