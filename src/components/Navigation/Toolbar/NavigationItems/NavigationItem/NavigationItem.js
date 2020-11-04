@@ -7,7 +7,7 @@ const NavigationItem = React.memo((props) => {
 	let finalAddress = null;
 	const link=props.link
 	if (link === 'resume') {
-		console.log('props', props);
+		console.log('NAVIGATION ITEM props', props);
 		finalAddress = <span onClick={() => props.openResume()}></span>;
 	}
 	if (link[1] === '#') {

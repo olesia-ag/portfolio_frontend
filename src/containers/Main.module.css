@@ -12,30 +12,9 @@
 	width: 100vw;
 	max-width: 100vw;
 	margin: 0;
-	/* z-index: 4; */
+	padding: 0;
 	position: top;
-	background: url(../assets/header-pic-4.jpg) no-repeat right;
-	background-size: cover;
 }
-
-.aboutMeHeader {
-	font-weight: 300;
-	font-size: xx-large;
-	margin: 0;
-	color: var(--background-light-color);
-	text-align: center;
-	background-color: transparent;
-	display: flex;
-	justify-content: center;
-	width: 100vw;
-	position: absolute;
-	top: 40%;
-}
-
-.ContactMe {
-	margin: 5px;
-}
-
 .aboutMeContainer {
 	position: relative;
 	top: 70%;
@@ -51,17 +30,35 @@
 	font-weight: 800;
 }
 
+.AboutMe,
+.ContactMe {
+	background-color: rgba(var(--background-color), 0.6);
+	width: 100vw;
+	margin: 0;
+	padding: 0 0 0.5rem 0;
+}
+
 /* desktop layout */
 @media (min-width: 769px) {
+	.AboutMe,
+	.ContactMe {
+		margin: 3rem;
+		width: 80%;
+		display: flex;
+		justify-content: center;
+		padding: 3rem;
+		border-radius: 3rem;
+		-webkit-box-shadow: inset 9px 9px 29px 14px rgba(163, 199, 67, 1);
+		-moz-box-shadow: inset 9px 9px 29px 14px rgba(163, 199, 67, 1);
+		box-shadow: inset 9px 9px 29px 14px rgba(163, 199, 67, 1);
+	}
 	.AboutMe {
 		font-size: medium;
-		width: 80vw;
-		display: flex;
 		flex-direction: row;
 	}
 
 	.ContactMe {
-		margin-top: 2rem;
+		flex-direction: column;
 	}
 
 	.aboutMeContainer {

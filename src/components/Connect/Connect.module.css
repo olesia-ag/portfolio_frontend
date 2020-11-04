@@ -1,12 +1,10 @@
 .Connect {
 	display: flex;
-	width: 90vw;
+	width: 100%;
 	justify-content: center;
-	margin: 3rem;
-
 }
 
-ul {
+.Connect ul {
 	list-style: none;
 	display: flex;
 	flex-direction: row;

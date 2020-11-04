@@ -24,7 +24,7 @@ export const Skills = () => (
 				<li>LaGuardia Community College - Queens, NY - Computer Science</li>
 				<li>
 					Fullstack Academy - New York, NY - completed 17 week course in
-					full-stack web development
+					fullstack web development
 				</li>
 			</ul>
 		</section>

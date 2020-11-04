@@ -24,14 +24,18 @@ const NavigationItems = (props) => {
 				<NavigationItem link='/#contact-me' exact>
 					CONTACT ME
 				</NavigationItem>
-				<div
+				<NavigationItem link='resume' exact openResume={props.openResume}>
+					RESUME
+				</NavigationItem>
+				{/* <div
+					className={classes.ResumeLink}
 					onClick={(e) => {
 						console.log('calling open resume', props.openResume);
-						e.preventDefault()
+						e.preventDefault();
 						props.openResume();
 					}}>
 					RESUME
-				</div>
+				</div> */}
 			</ul>
 			<span className={nameClasses.join(' ')}>
 				<HashLink smooth to='/#'>

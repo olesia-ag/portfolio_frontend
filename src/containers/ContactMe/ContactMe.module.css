@@ -1,6 +1,7 @@
 .ContactData {
-	width: 90vw;
+	width: 100%;
 	margin: 0 auto;
+	padding: 5px;
 }
 
 .ContactData form {

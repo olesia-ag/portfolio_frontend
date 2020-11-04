@@ -45,47 +45,47 @@
 
 .TextArea::-webkit-input-placeholder {
 	text-align: center;
-	color: var(--primary-light-color);
+	color: var(--primary-color);
 }
 
 .TextArea::-moz-placeholder {
 	text-align: center;
-	color: var(--primary-light-color);
+	color: var(--primary-color);
 }
 
 .TextArea:-ms-input-placeholder {
 	text-align: center;
-	color: var(--primary-light-color);
+	color: var(--primary-color);
 }
 
 .TextArea::-ms-input-placeholder {
 	text-align: center;
-	color: var(--primary-light-color);
+	color: var(--primary-color);
 }
 
 .TextArea::placeholder {
 	text-align: center;
-	color: var(--primary-light-color);
+	color: var(--primary-color);
 }
 .InputElement::-webkit-input-placeholder {
 	text-align: center;
-	color: var(--primary-light-color);
+	color: var(--primary-color);
 }
 .InputElement::-moz-placeholder {
 	text-align: center;
-	color: var(--primary-light-color);
+	color: var(--primary-color);
 }
 .InputElement:-ms-input-placeholder {
 	text-align: center;
-	color: var(--primary-light-color);
+	color: var(--primary-color);
 }
 .InputElement::-ms-input-placeholder {
 	text-align: center;
-	color: var(--primary-light-color);
+	color: var(--primary-color);
 }
 .InputElement::placeholder {
 	text-align: center;
-	color: var(--primary-light-color);
+	color: var(--primary-color);
 }
 
 /* tablet layout */
@@ -94,7 +94,7 @@
 
 @media (min-width: 769px) {
 	.Input {
-		width: 60%;
+		width: 90%;
 		padding: 10px;
 		box-sizing: border-box;
 	}

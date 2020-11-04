@@ -25,6 +25,7 @@ const Layout = (props) => {
 	}, []);
 
 	const openResume = useCallback(() => {
+		console.log('open resume was called')
 		setShowResume(true);
 	}, []);
 
