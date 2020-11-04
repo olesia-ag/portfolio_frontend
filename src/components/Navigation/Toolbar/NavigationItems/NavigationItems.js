@@ -46,6 +46,6 @@ const NavigationItems = (props) => {
 	);
 };
 
-NavigationItems.whyDidYouRender = true;
+// NavigationItems.whyDidYouRender = true;
 
 export default pure(NavigationItems);

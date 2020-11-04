@@ -31,6 +31,6 @@ const NavigationItem = React.memo((props) => {
 	);
 });
 
-NavigationItem.whyDidYouRender = true
+// NavigationItem.whyDidYouRender = true
 
 export default NavigationItem;
