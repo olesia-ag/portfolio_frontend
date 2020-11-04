@@ -2,3 +2,9 @@
 	max-width: 100vw;
 	min-height: 60vh;
 }
+
+.Layout{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}

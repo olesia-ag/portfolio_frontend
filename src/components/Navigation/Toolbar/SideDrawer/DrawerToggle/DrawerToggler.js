@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './DrawerToggler.module.css';
 
-const drawerToggler = (props) => {
+const DrawerToggler = (props) => {
 
 	if (props.opened) {
 		return <div className={classes.NotShow}></div>;
@@ -16,4 +16,4 @@ const drawerToggler = (props) => {
 	}
 };
 
-export default drawerToggler;
+export default DrawerToggler;

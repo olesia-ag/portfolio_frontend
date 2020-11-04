@@ -2,16 +2,18 @@ import React from 'react';
 import classes from './NavigationItems.module.css';
 import NavigationItem from './NavigationItem/NavigationItem';
 import { HashLink } from 'react-router-hash-link';
+import { pure } from 'recompose';
 
-const navigationItems = ({ headerPosition }) => {
-
+const NavigationItems = (props) => {
 	let nameClasses = [classes.NotShow];
 	let linksClasses = [classes.NavigationList];
 
-	if (headerPosition === 1) {
+	if (props.headerPosition === 1) {
 		nameClasses = [classes.Top];
 		linksClasses = [classes.NavigationList, classes.NavigationListWhite];
 	}
+
+	console.log('props open resume', props.openResume);
 	return (
 		<div className={classes.NavigationContainer}>
 			<ul className={linksClasses.join(' ')}>
@@ -22,6 +24,14 @@ const navigationItems = ({ headerPosition }) => {
 				<NavigationItem link='/#contact-me' exact>
 					CONTACT ME
 				</NavigationItem>
+				<div
+					onClick={(e) => {
+						console.log('calling open resume', props.openResume);
+						e.preventDefault()
+						props.openResume();
+					}}>
+					RESUME
+				</div>
 			</ul>
 			<span className={nameClasses.join(' ')}>
 				<HashLink smooth to='/#'>
@@ -32,4 +42,6 @@ const navigationItems = ({ headerPosition }) => {
 	);
 };
 
-export default navigationItems;
+NavigationItems.whyDidYouRender = true;
+
+export default pure(NavigationItems);

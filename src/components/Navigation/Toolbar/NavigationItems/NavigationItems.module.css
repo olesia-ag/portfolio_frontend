@@ -6,6 +6,7 @@
 	flex-flow: column;
 	align-items: center;
 	height: 100%;
+	width: 100%;
 	font-family: inherit;
 	z-index: 250;
 	color: var(--primary-light-color);
@@ -19,7 +20,6 @@
 @media (min-width: 769px) {
 	.NavigationList {
 		flex-flow: row;
-		width: 100%;
 		color: var(--text-color);
 		transition: ease-in 1s;
 	}

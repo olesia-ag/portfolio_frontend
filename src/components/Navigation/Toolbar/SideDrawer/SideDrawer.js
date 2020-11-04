@@ -13,7 +13,7 @@ const sideDrawer = (props) => {
 		<>
 			<div className={attachedClasses.join(' ')} onClick={props.closed}>
 				<nav>
-					<NavigationItems />
+					<NavigationItems openResume={props.openResume} />
 				</nav>
 			</div>
 		</>
