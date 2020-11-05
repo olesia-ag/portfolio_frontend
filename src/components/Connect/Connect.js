@@ -27,7 +27,7 @@ function Connect() {
 						</a>
 					</li>
 					<li>
-						<a href='https://github.com/olesia-ag'>
+						<a href='https://medium.com/@olesiagarbuzova'>
 							<img src={MediumIcon} alt='Medium' />
 						</a>
 					</li>
