@@ -13,7 +13,6 @@ const NavigationItems = (props) => {
 		linksClasses = [classes.NavigationList, classes.NavigationListWhite];
 	}
 
-	console.log('props open resume', props.openResume);
 	return (
 		<div className={classes.NavigationContainer}>
 			<ul className={linksClasses.join(' ')}>

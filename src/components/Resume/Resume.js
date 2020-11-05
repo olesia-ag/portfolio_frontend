@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './Resume.module.css';
 import Button from '../UI/Button/Button';
 import { downloadResume } from '../../shared/utility';
-import Pdf from '../../assets/resume.pdf';
+import Pdf from '../../assets/olesia_guidi_resume.pdf';
 
 export const Resume = (props) => {
 	return (
