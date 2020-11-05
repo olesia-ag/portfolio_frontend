@@ -1,0 +1,25 @@
+.Skills {
+	margin: 1rem auto;
+	width: 90vw;
+}
+ul.SkillsList {
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+.SkillsList li {
+	margin-right: 1.5rem;
+}
+@media (min-width: 600px) {
+	.Skills {
+		display: flex;
+		flex-direction: column;
+		flex: 1;
+	}
+
+	strong {
+		font-weight: 800;
+		font-size: large;
+	}
+}

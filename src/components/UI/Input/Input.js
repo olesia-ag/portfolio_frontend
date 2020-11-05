@@ -52,7 +52,6 @@ const input = (props) => {
 		<div className={classes.Input}>
 			<label className={classes.Label}>{validationMessage}</label>
 			{inputElement}
-
 		</div>
 	)
 }

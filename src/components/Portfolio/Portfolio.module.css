@@ -1,5 +1,15 @@
-.Center {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
+.Portfolio {
+	margin: 5rem;
+	padding: 0.5em;
+	min-height: 40vh;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+@media (min-width: 769px) {
+	.Portfolio {
+		justify-content: center;
+	}
 }

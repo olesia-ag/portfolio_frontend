@@ -1,31 +1,17 @@
- .ContactData {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	width: 100vw;
+.ContactData {
+	width: 100%;
+	margin: 0 auto;
+	padding: 5px;
 }
-  .Form {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		flex-wrap: nowrap;
 
- }
-
- .ButtonContainer{
-	 margin: 1em;
- }
-
-/* tablet layout */
-@media (min-width: 50em) {
-	.Form {
-		width: 65%;
-	}
-
+.ContactData form {
+	margin: 0 auto;
 }
- @media (min-width: 75em) {
-	 .Form{
-		 width: 90%;
-	 }
+.Form {
+	margin: 0 auto;
+}
 
- }
+form > .ButtonContainer {
+	margin: 0 auto;
+	width: 30%;
+}

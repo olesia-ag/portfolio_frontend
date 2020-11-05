@@ -1,8 +1,6 @@
 /* mobile first: */
 
-* {
-	color: var(--textColor);
-}
+
 
 .brMinor.brMajor {
 	line-height: 2rem;
@@ -11,6 +9,8 @@
 .AboutMe {
 	margin: 0 1rem;
 	font-size: x-large;
+	text-align: center;
+
 }
 
 /* table layout */
@@ -28,6 +28,10 @@
 		display: none;
 	}
 	.AboutMe {
-		font-size: large;
+		margin: 0;
+		display: flex;
+		text-align: left;
+		align-items: center;
+		flex: 2;
 	}
 }

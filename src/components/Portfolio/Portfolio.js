@@ -1,17 +1,16 @@
 import React from 'react';
 import classes from './Portfolio.module.css';
-import PortfolioItems from './PortfolioItems/PortfolioItems';
-import Button from '../UI/Button/Button';
-import { downloadResume } from '../../shared/utility';
+import GitHubIcon from '../../assets/icons/i-github.svg';
+
 
 const Portfolio = (props) => {
 	return (
-		<>
-			<div className={classes.Center}>
-				<Button clicked={downloadResume}>Donwload Full Resume (pdf)</Button>
-			</div>
-			<PortfolioItems />
-		</>
+		<div className={classes.Portfolio}>
+		<span><strong>Will be updated soon!</strong></span>
+		<h4>In a meantime, <br /> please check out my <a href='https://github.com/olesia-ag'>
+							<img src={GitHubIcon} alt='GitHub' />
+						</a> </h4>
+		</div>
 	);
 };
 

@@ -1,23 +1,33 @@
-.Button {
+.Center {
+	display: flex;
+	justify-content: center;
+}
+
+button.Button {
 	background-color: transparent;
 	outline: none;
 	cursor: pointer;
 	font-weight: bold;
-	border: 2px;
 	font: inherit;
-	padding: 0.3em 10%;
-	margin: 0.2em;
-	border-radius: 0.5em;
+	padding: .5rem 1rem;
+	width: 7rem;
+	border-radius: 0.9em;
+	border-color: var(--primary-dark-color);
+}
+
+button.Button:hover{
+	opacity: .6;
 }
 
 .Success {
-	color: var(--darkColor);
+	color: var(--primary-dark-color);
 }
 .Danger {
-	color: var(--pink);
+	color: var(--primary-color);
 }
 
 .Button:disabled {
-	color: var(--lightPink);
+	color: var(--primary-color);
+	border-color: var(--primary-color);
 	cursor: not-allowed;
 }
