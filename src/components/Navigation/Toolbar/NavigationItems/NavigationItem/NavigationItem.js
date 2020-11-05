@@ -7,10 +7,9 @@ const NavigationItem = React.memo((props) => {
 	let finalAddress = null;
 	const link=props.link
 	if (link === 'resume') {
-		console.log('NAVIGATION ITEM props', props);
-		finalAddress = <span onClick={() => props.openResume()}></span>;
+		finalAddress = <span onClick={() => props.openResume()}>RESUME</span>;
 	}
-	if (link[1] === '#') {
+	else if (link[1] === '#') {
 		finalAddress = (
 			<HashLink smooth to={`${link}`}>
 				{props.children}
@@ -31,6 +30,5 @@ const NavigationItem = React.memo((props) => {
 	);
 });
 
-// NavigationItem.whyDidYouRender = true
 
 export default NavigationItem;

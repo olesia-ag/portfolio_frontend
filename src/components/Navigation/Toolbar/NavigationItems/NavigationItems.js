@@ -27,15 +27,6 @@ const NavigationItems = (props) => {
 				<NavigationItem link='resume' exact openResume={props.openResume}>
 					RESUME
 				</NavigationItem>
-				{/* <div
-					className={classes.ResumeLink}
-					onClick={(e) => {
-						console.log('calling open resume', props.openResume);
-						e.preventDefault();
-						props.openResume();
-					}}>
-					RESUME
-				</div> */}
 			</ul>
 			<span className={nameClasses.join(' ')}>
 				<HashLink smooth to='/#'>
@@ -46,6 +37,5 @@ const NavigationItems = (props) => {
 	);
 };
 
-// NavigationItems.whyDidYouRender = true;
 
 export default pure(NavigationItems);

@@ -48,8 +48,6 @@
 		justify-content: center;
 		padding: 3rem;
 		border-radius: 3rem;
-		-webkit-box-shadow: inset 9px 9px 29px 14px rgba(163, 199, 67, 1);
-		-moz-box-shadow: inset 9px 9px 29px 14px rgba(163, 199, 67, 1);
 		box-shadow: inset 9px 9px 29px 14px rgba(163, 199, 67, 1);
 	}
 	.AboutMe {

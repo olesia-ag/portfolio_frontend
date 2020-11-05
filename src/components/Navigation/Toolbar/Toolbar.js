@@ -10,7 +10,7 @@ const Toolbar = (props) => {
 		toolbarClasses = [classes.Toolbar, classes.Show];
 	}
 
-	console.log('showResume:', props.showResume, 'openResume', props.openResume);
+
 	return (
 		<header className={toolbarClasses.join(' ')}>
 			<DrawerToggle
@@ -28,6 +28,5 @@ const Toolbar = (props) => {
 	);
 };
 
-Toolbar.whyDidYouRender = true;
 
 export default pure(Toolbar);

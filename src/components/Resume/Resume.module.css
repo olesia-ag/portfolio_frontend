@@ -1,12 +1,17 @@
 .Resume {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	width: 100%;
 	justify-content: space-evenly;
+}
+.Resume button {
+	margin: 7px 0;
 }
 
 @media (min-width: 600px) {
 	.Resume {
-			width: 500px;
-			left: calc(50% - 250px);
+		width: 100%;
+		left: calc(50% - 250px);
+		flex-direction: row;
 	}
 }

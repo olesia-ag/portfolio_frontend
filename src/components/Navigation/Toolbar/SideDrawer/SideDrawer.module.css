@@ -10,16 +10,20 @@
 	background-color: var(--primary-dark-color);
 	padding: 32px 16px;
 	box-sizing: border-box;
+	transition: -webkit-transform 0.3s ease-out;
 	transition: transform 0.3s ease-out;
+	transition: transform 0.3s ease-out, -webkit-transform 0.3s ease-out;
 	font-family: 'Dosis', sans-serif;
 }
 
 .Open {
-	transform: translateY(0);
+	-webkit-transform: translateY(0);
+	        transform: translateY(0);
 }
 
 .Close {
-	transform: translateY(-100%);
+	-webkit-transform: translateY(-100%);
+	        transform: translateY(-100%);
 }
 
 /* for 769 and more */

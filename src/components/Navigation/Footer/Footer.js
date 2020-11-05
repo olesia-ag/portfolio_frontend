@@ -8,7 +8,7 @@ const Footer = (props) => {
 			<span>
 				photo by{' '}
 				<a href='https://unsplash.com/@madelynn_woods?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'>
-					Madelynn woods
+					Madelynn Woods
 				</a>{' '}
 				on{' '}
 				<a href='https://unsplash.com/s/photos/black-and-white-flower?utm_source=unsplash&amp;utm_medium=referral&amp;utm_content=creditCopyText'>

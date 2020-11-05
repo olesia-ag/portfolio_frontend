@@ -1,12 +1,12 @@
 .Toolbar {
 	width: 100vw;
 	max-width: 100vw;
+	position: -webkit-sticky;
 	position: sticky;
 	height: 3.5rem;
-	/* min-height: 6vh; */
 	top: 0;
 	background-color: var(--primary-dark-color);
-	transition: ease-in-out 1s;
+	transition: ease-in-out 2s;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -42,7 +42,7 @@
 
 	.Show {
 		background-color: var(--primary-dark-color);
-		transition: ease-in-out 1s;
+		transition: ease-in-out 2s;
 	}
 	.Show > {
 		color: var(--text-light-color);
