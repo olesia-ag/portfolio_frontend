@@ -15,7 +15,7 @@ button.Button {
 	border-color: var(--primary-dark-color);
 }
 
-button.Button:hover{
+button.Button:hover:not([disabled]){
 	opacity: .6;
 }
 
@@ -31,3 +31,5 @@ button.Button:hover{
 	border-color: var(--primary-color);
 	cursor: not-allowed;
 }
+
+
