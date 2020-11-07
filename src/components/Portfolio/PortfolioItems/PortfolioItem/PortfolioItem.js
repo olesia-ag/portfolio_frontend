@@ -2,15 +2,15 @@ import React from 'react';
 import classes from './PortfolioItem.module.css';
 import gitHubIcon from '../../../../assets/icons/i-github.svg';
 
-const portfolioItem = (props) => {
+const PortfolioItem = (props) => {
 	return (
-		<div>
+		<div className={classes.PortfolioItem}>
 			<section className={classes.Links}>
 				<a href={props.deployed}>
 					<h4>{props.name}</h4>
 				</a>
 				<a href={props.github}>
-					<h5>(gitHub)</h5>
+	<h5>&nbsp;&nbsp;(gitHub)</h5>
 				</a>
 			</section>
 
@@ -23,4 +23,4 @@ const portfolioItem = (props) => {
 	);
 };
 
-export default portfolioItem;
+export default PortfolioItem;

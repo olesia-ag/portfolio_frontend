@@ -2,14 +2,20 @@
 	margin: 5rem;
 	padding: 0.5em;
 	min-height: 40vh;
-	text-align: center;
+	text-align: left;
 	display: flex;
 	flex-direction: column;
-	justify-content: flex-end;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+	margin: 0;
+	padding: 0.5rem;
 }
 
 @media (min-width: 769px) {
 	.Portfolio {
-		justify-content: center;
+		background-color: unset;
+		width: 80vw;
+		margin: 0 auto;
 	}
 }

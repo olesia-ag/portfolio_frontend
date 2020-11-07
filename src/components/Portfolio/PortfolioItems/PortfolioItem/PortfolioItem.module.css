@@ -11,3 +11,12 @@ ul {
 a {
 	text-decoration: none;
 }
+
+@media (min-width: 769px) {
+	.PortfolioItem {
+		background-color: rgba(var(--background-color), 0.7);
+		margin: 0.8rem;
+		padding: 0.5rem;
+		border-radius: 1.5rem;
+	}
+}

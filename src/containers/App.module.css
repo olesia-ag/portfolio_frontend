@@ -1,13 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 :root {
 	--text-color: #080708;
-	--text-light-color: #FED7C8;
+	--text-light-color: #f4f3ee;
 	--header-text-color: #593582;
 	--background-color: 229, 218, 216;
 	--primary-color: #b8b8b8;
 	--primary-light-color: #FED7C8;
-	--primary-dark-color: #262F0E;
-
+	--primary-dark-color: #463F3A;
 	font-family: 'Roboto', sans-serif;
 }
 * {

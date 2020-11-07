@@ -4,11 +4,21 @@ import PortfolioItem from './PortfolioItem/PortfolioItem';
 
 const PortfolioItems = (props) => {
 	const [projects] = useState({
+		portfolio: {
+			name: 'Portfolio',
+			github: 'https://github.com/olesia-ag/portfolio-frontend',
+			deployed: 'http://olesiag.com',
+			description: 'That\'s the website you\'re looking at :)',
+			role:
+				'Its frontend is built with React.js and CSS modules and deployed with a help of Netlify. Backend uses Express.js (Nodemailer in particular) and deployed on Heroku',
+			stack: 'React.js, Express.js, CSS Modules',
+			pictire: ''
+		},
 		bookyourevent: {
-			name: 'Book Your Event – Solo Developer ',
+			name: 'Book Your Event',
 			github: 'https://github.com/olesia-ag/bookyourevent',
 			deployed: 'http://book-your-event.herokuapp.com',
-			description: 'A property management web application',
+			description: 'A property management web ap plication',
 			role:
 				'Designed and developed functionality to allow users to check availability of the space and submit a form to book the event. Built schemas in database, associations between events and venues, created functional UI with calendar and form submission component',
 			stack: 'Sequelize, Express.js, React.js, React-Redux.',

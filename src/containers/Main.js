@@ -11,11 +11,9 @@ function Main() {
 	return (
 		<div className={classes.Main}>
 			<header className={classes.MainHeader}>
-				<div className={classes.aboutMeContainer}>
+				<div className={classes.AboutMeContainer}>
 					<div className={classes.first}>Hello World, I am Olesia</div>
-
 					<div className={classes.second}>a fullstack developer</div>
-
 					<div className={classes.third}>living in NYC</div>
 				</div>
 			</header>
