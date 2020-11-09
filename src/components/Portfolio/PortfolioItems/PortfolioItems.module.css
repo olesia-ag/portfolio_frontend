@@ -1,4 +1,20 @@
 
 
+.Description a:hover {
+	opacity: 0.7;
+}
 
+.Description a{
+	text-decoration: underline;
+}
 
+@media (min-width: 769px) {
+	.Description {
+		background-color: rgba(var(--background-color), 0.7);
+		margin: 0.8rem;
+		padding: 0.5rem;
+		font-size: x-large;
+
+		/* border-radius: 1.5rem; */
+	}
+}
