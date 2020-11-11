@@ -6,7 +6,7 @@ const PortfolioItems = (props) => {
 	const [projects] = useState({
 		portfolio: {
 			name: 'Portfolio',
-			github: 'https://github.com/olesia-ag/portfolio-frontend',
+			github: 'https://github.com/olesia-ag/portfolio_frontend',
 			deployed: 'http://olesiag.com',
 			description: "The website you're looking at :)",
 			role:

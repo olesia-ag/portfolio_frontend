@@ -12,16 +12,16 @@ a {
 	text-decoration: none;
 }
 
-
-/* visually hidden items */
-dl.PortfolioItem dt{
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px; width: 1px;
-  margin: -1px; padding: 0; border: 0;
+dl.PortfolioItem dt {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
 }
-
 
 @media (min-width: 769px) {
 	.PortfolioItem {

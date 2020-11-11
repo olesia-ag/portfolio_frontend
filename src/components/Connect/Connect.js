@@ -12,23 +12,23 @@ function Connect() {
 				<ul>
 					<li>
 						<a href='https://github.com/olesia-ag'>
-							<img src={GitHubIcon} alt='GitHub' />
+							<img src={GitHubIcon} alt='my gitHub' />
 						</a>
 					</li>
 					<li>
 						<a href='https://twitter.com/olesia_ag'>
 							{' '}
-							<img src={TwitterIcon} alt='Twitter' />
+							<img src={TwitterIcon} alt='my twitter' />
 						</a>
 					</li>
 					<li>
 						<a href='https://www.linkedin.com/in/olesia-guidi/'>
-							<img src={LinkedInIcon} alt='LinkedIn' />
+							<img src={LinkedInIcon} alt='my linkedin' />
 						</a>
 					</li>
 					<li>
 						<a href='https://medium.com/@olesiagarbuzova'>
-							<img src={MediumIcon} alt='Medium' />
+							<img src={MediumIcon} alt='my medium' />
 						</a>
 					</li>
 				</ul>

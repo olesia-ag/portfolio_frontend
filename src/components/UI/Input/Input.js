@@ -50,8 +50,9 @@ const input = (props) => {
 
 	return (
 		<div className={classes.Input}>
-			<label className={classes.Label}>{validationMessage}</label>
+			<label className={classes.Label}>{validationMessage}
 			{inputElement}
+			</label>
 		</div>
 	)
 }
