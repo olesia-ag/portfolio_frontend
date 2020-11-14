@@ -11,7 +11,7 @@ ul.SkillsList {
 .SkillsList li {
 	margin-right: 1.5rem;
 }
-@media (min-width: 600px) {
+@media (min-width: 769px) {
 	.Skills {
 		display: flex;
 		flex-direction: column;
