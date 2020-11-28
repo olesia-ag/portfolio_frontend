@@ -53,14 +53,7 @@ const PortfolioItems = (props) => {
 	}
 	let items = (
 		<div className={classes.PortfolioItems}>
-			<div className={classes.Description}>
-				I recently joined the{' '}
-				<a href='https://astoria.digital/'>Astoria Digital community</a> and
-				started working on a muckrock data vizualisation app that will provide
-				access to New York state police disciplinary records. More on this will
-				be shared soon. <br /> In a meantime, here are some of the projects I
-				completed:
-			</div>
+
 			{formPortfolioItemsArray.map((project) => (
 				<PortfolioItem
 					key={project.id}
