@@ -58,8 +58,22 @@
 	.MainHeader {
 		align-items: flex-start;
 		justify-content: center;
-		height: 50vh;
+		height: 810px;
+		background: #FFFFFF;
+		opacity: 0.7;
 	}
+
+	.Portrait{
+		mix-blend-mode: hard-light;
+		background: url(../assets/portrait.jpg);
+		height: 100%;
+		width: 50%;
+		background-color: #333;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+
+
 	.AboutMeContainer {
 		margin-left: 5rem;
 	}

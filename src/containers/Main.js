@@ -11,6 +11,7 @@ function Main() {
 	return (
 		<div className={classes.Main}>
 			<header className={classes.MainHeader}>
+				<div className={classes.Portrait}>hi</div>
 				<div className={classes.AboutMeContainer}>
 					<div className={classes.first}>Hello World, I am Olesia</div>
 					<div className={classes.second}>a fullstack developer</div>
