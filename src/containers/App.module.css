@@ -2,13 +2,9 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
 
 :root {
-	--text-color: #080708;
-	--text-light-color: #f4f3ee;
-	--header-text-color: #593582;
-	--background-color: 229, 218, 216;
-	--primary-color: #b8b8b8;
-	--primary-light-color: #fed7c8;
-	--primary-dark-color: #463f3a;
+	--color-black: #000;
+	--color-white: #fff;
+	--primary-pink: #ffd1c6;
 }
 
 html {
@@ -56,4 +52,18 @@ a:active {
 }
 .link {
 	text-decoration: none;
+}
+
+p {
+	font-family: 'IBM Plex Mono', monospace;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 2.2rem;
+	line-height: 140%;
+}
+
+h1 {
+	font-weight: 300;
+	font-size: 6rem;
+	line-height: 7.5rem;
 }
