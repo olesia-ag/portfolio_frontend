@@ -1,18 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+
 :root {
 	--text-color: #080708;
 	--text-light-color: #f4f3ee;
 	--header-text-color: #593582;
 	--background-color: 229, 218, 216;
 	--primary-color: #b8b8b8;
-	--primary-light-color: #FED7C8;
-	--primary-dark-color: #463F3A;
-	font-family: 'Roboto', sans-serif;
+	--primary-light-color: #fed7c8;
+	--primary-dark-color: #463f3a;
 }
+
+html {
+	font-size: 62.5%;
+}
+
 * {
-	font-family: inherit;
+	font-family: 'Prata', serif;
 	box-sizing: border-box;
+	font-size: 1.6rem;
 }
+
 .App {
 	max-width: 100vw;
 	max-height: 100vh;

@@ -6,9 +6,6 @@ import { pure } from 'recompose';
 
 const Toolbar = (props) => {
 	let toolbarClasses = [classes.Toolbar];
-	if (props.headerPosition === 1) {
-		toolbarClasses = [classes.Toolbar, classes.Show];
-	}
 
 
 	return (
@@ -20,7 +17,6 @@ const Toolbar = (props) => {
 			/>
 			<nav className={classes.DesktopOnly}>
 				<NavigationItems
-					headerPosition={props.headerPosition}
 					openResume={props.openResume}
 				/>
 			</nav>

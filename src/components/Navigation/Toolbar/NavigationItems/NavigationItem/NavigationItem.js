@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './NavigationItem.module.css';
 import { NavLink } from 'react-router-dom';
-import { HashLink } from 'react-router-hash-link';
+import { NavHashLink } from 'react-router-hash-link';
 
 const NavigationItem = React.memo((props) => {
 	let finalAddress = null;
@@ -11,9 +11,9 @@ const NavigationItem = React.memo((props) => {
 	}
 	else if (link[1] === '#') {
 		finalAddress = (
-			<HashLink smooth to={`${link}`}>
+			<NavHashLink smooth to={`${link}`} activeClassName={classes.Selected}>
 				{props.children}
-			</HashLink>
+			</NavHashLink>
 		);
 	} else {
 		finalAddress = (

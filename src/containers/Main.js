@@ -12,11 +12,11 @@ function Main() {
 		<div className={classes.Main}>
 			<header className={classes.MainHeader}>
 				<div className={classes.Portrait}>hi</div>
-				<div className={classes.AboutMeContainer}>
+				{/* <div className={classes.AboutMeContainer}>
 					<div className={classes.first}>Hello World, I am Olesia</div>
 					<div className={classes.second}>a fullstack developer</div>
 					<div className={classes.third}>living in NYC</div>
-				</div>
+				</div> */}
 			</header>
 			{/* id is used for scrolling to an item, do not remove */}
 			<div className={classes.AboutMe} id='about-me'>
